@@ -1,0 +1,348 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\serha\\source\\repos\\CleanApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.application\\services\\memoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|solutionrelative:app.application\\services\\memoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E498D8F9-B396-4D7A-A51E-C19C9FB463DB}|App.API\\App.API.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.api\\controllers\\memorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E498D8F9-B396-4D7A-A51E-C19C9FB463DB}|App.API\\App.API.csproj|solutionrelative:app.api\\controllers\\memorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E498D8F9-B396-4D7A-A51E-C19C9FB463DB}|App.API\\App.API.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E498D8F9-B396-4D7A-A51E-C19C9FB463DB}|App.API\\App.API.csproj|solutionrelative:app.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.application\\contracts\\persistence\\imemoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|solutionrelative:app.application\\contracts\\persistence\\imemoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A0430DB-74ED-4CEB-8E1E-E6C2A195905F}|App.Persistence\\App.Persistence.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.persistence\\memoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A0430DB-74ED-4CEB-8E1E-E6C2A195905F}|App.Persistence\\App.Persistence.csproj|solutionrelative:app.persistence\\memoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|solutionrelative:app.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00060FD9-3643-4EF8-B486-96008358D798}|App.Domain\\App.Domain.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.domain\\entities\\memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00060FD9-3643-4EF8-B486-96008358D798}|App.Domain\\App.Domain.csproj|solutionrelative:app.domain\\entities\\memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.application\\contracts\\persistence\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|solutionrelative:app.application\\contracts\\persistence\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00060FD9-3643-4EF8-B486-96008358D798}|App.Domain\\App.Domain.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00060FD9-3643-4EF8-B486-96008358D798}|App.Domain\\App.Domain.csproj|solutionrelative:app.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A0430DB-74ED-4CEB-8E1E-E6C2A195905F}|App.Persistence\\App.Persistence.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.persistence\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A0430DB-74ED-4CEB-8E1E-E6C2A195905F}|App.Persistence\\App.Persistence.csproj|solutionrelative:app.persistence\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E498D8F9-B396-4D7A-A51E-C19C9FB463DB}|App.API\\App.API.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E498D8F9-B396-4D7A-A51E-C19C9FB463DB}|App.API\\App.API.csproj|solutionrelative:app.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A0430DB-74ED-4CEB-8E1E-E6C2A195905F}|App.Persistence\\App.Persistence.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A0430DB-74ED-4CEB-8E1E-E6C2A195905F}|App.Persistence\\App.Persistence.csproj|solutionrelative:app.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E498D8F9-B396-4D7A-A51E-C19C9FB463DB}|App.API\\App.API.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E498D8F9-B396-4D7A-A51E-C19C9FB463DB}|App.API\\App.API.csproj|solutionrelative:app.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.application\\dto\u0027s\\user\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|solutionrelative:app.application\\dto\u0027s\\user\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.application\\dto\u0027s\\user\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|solutionrelative:app.application\\dto\u0027s\\user\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.application\\dto\u0027s\\memory\\memorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|solutionrelative:app.application\\dto\u0027s\\memory\\memorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.application\\dto\u0027s\\memory\\memoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2844B8D4-A2C5-480B-ACDE-E9FC7B7A7100}|App.Application\\App.Application.csproj|solutionrelative:app.application\\dto\u0027s\\memory\\memoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A0430DB-74ED-4CEB-8E1E-E6C2A195905F}|App.Persistence\\App.Persistence.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A0430DB-74ED-4CEB-8E1E-E6C2A195905F}|App.Persistence\\App.Persistence.csproj|solutionrelative:app.persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A0430DB-74ED-4CEB-8E1E-E6C2A195905F}|App.Persistence\\App.Persistence.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.persistence\\app.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0A0430DB-74ED-4CEB-8E1E-E6C2A195905F}|App.Persistence\\App.Persistence.csproj|solutionrelative:app.persistence\\app.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E498D8F9-B396-4D7A-A51E-C19C9FB463DB}|App.API\\App.API.csproj|c:\\users\\serha\\source\\repos\\cleanapp\\app.api\\app.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E498D8F9-B396-4D7A-A51E-C19C9FB463DB}|App.API\\App.API.csproj|solutionrelative:app.api\\app.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 230,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "App.Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "App.Application\\Services\\UserService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:01:03.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "App.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "App.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T00:52:53.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Memory.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Domain\\Entities\\Memory.cs",
+              "RelativeDocumentMoniker": "App.Domain\\Entities\\Memory.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Domain\\Entities\\Memory.cs",
+              "RelativeToolTip": "App.Domain\\Entities\\Memory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T02:19:40.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MemoryService.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Services\\MemoryService.cs",
+              "RelativeDocumentMoniker": "App.Application\\Services\\MemoryService.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Services\\MemoryService.cs",
+              "RelativeToolTip": "App.Application\\Services\\MemoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:02:14.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Persistence\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "App.Persistence\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Persistence\\ServiceRegistration.cs",
+              "RelativeToolTip": "App.Persistence\\ServiceRegistration.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T02:56:25.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.API\\appsettings.json",
+              "RelativeDocumentMoniker": "App.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.API\\appsettings.json",
+              "RelativeToolTip": "App.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-01T01:41:31.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Dto\u0027s\\User\\UserCreateDTO.cs",
+              "RelativeDocumentMoniker": "App.Application\\Dto\u0027s\\User\\UserCreateDTO.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Dto\u0027s\\User\\UserCreateDTO.cs",
+              "RelativeToolTip": "App.Application\\Dto\u0027s\\User\\UserCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T00:22:22.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MemoryCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Dto\u0027s\\Memory\\MemoryCreateDTO.cs",
+              "RelativeDocumentMoniker": "App.Application\\Dto\u0027s\\Memory\\MemoryCreateDTO.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Dto\u0027s\\Memory\\MemoryCreateDTO.cs",
+              "RelativeToolTip": "App.Application\\Dto\u0027s\\Memory\\MemoryCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T00:30:00.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MemoryUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Dto\u0027s\\Memory\\MemoryUpdateDTO.cs",
+              "RelativeDocumentMoniker": "App.Application\\Dto\u0027s\\Memory\\MemoryUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Dto\u0027s\\Memory\\MemoryUpdateDTO.cs",
+              "RelativeToolTip": "App.Application\\Dto\u0027s\\Memory\\MemoryUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T04:43:21.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Persistence\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "App.Persistence\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Persistence\\AppDbContext.cs",
+              "RelativeToolTip": "App.Persistence\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:25:03.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.Persistence.csproj",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Persistence\\App.Persistence.csproj",
+              "RelativeDocumentMoniker": "App.Persistence\\App.Persistence.csproj",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Persistence\\App.Persistence.csproj",
+              "RelativeToolTip": "App.Persistence\\App.Persistence.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-01T01:46:56.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "App.API.csproj",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.API\\App.API.csproj",
+              "RelativeDocumentMoniker": "App.API\\App.API.csproj",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.API\\App.API.csproj",
+              "RelativeToolTip": "App.API\\App.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-28T00:38:39.59Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 170,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IMemoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Contracts\\Persistence\\IMemoryRepository.cs",
+              "RelativeDocumentMoniker": "App.Application\\Contracts\\Persistence\\IMemoryRepository.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Contracts\\Persistence\\IMemoryRepository.cs",
+              "RelativeToolTip": "App.Application\\Contracts\\Persistence\\IMemoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:15:21.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "App.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "App.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwC4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:09:52.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MemoryController.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.API\\Controllers\\MemoryController.cs",
+              "RelativeDocumentMoniker": "App.API\\Controllers\\MemoryController.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.API\\Controllers\\MemoryController.cs",
+              "RelativeToolTip": "App.API\\Controllers\\MemoryController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAkwDsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:10:47.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MemoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Persistence\\MemoryRepository.cs",
+              "RelativeDocumentMoniker": "App.Persistence\\MemoryRepository.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Persistence\\MemoryRepository.cs",
+              "RelativeToolTip": "App.Persistence\\MemoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T06:51:16.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Contracts\\Persistence\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "App.Application\\Contracts\\Persistence\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Contracts\\Persistence\\IUserRepository.cs",
+              "RelativeToolTip": "App.Application\\Contracts\\Persistence\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:15:33.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Persistence\\UserRepository.cs",
+              "RelativeDocumentMoniker": "App.Persistence\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Persistence\\UserRepository.cs",
+              "RelativeToolTip": "App.Persistence\\UserRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T04:10:33.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.API\\Program.cs",
+              "RelativeDocumentMoniker": "App.API\\Program.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.API\\Program.cs",
+              "RelativeToolTip": "App.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T01:52:12.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Dto\u0027s\\User\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "App.Application\\Dto\u0027s\\User\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\serha\\source\\repos\\CleanApp\\App.Application\\Dto\u0027s\\User\\LoginDTO.cs",
+              "RelativeToolTip": "App.Application\\Dto\u0027s\\User\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T21:46:00.335Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

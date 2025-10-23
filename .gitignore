@@ -1,0 +1,14 @@
+# .NET
+api/bin/
+api/obj/
+
+# Node / React
+client/node_modules/
+client/dist/
+
+# Environment files
+*.env
+.env.local
+
+# IDE
+.vscode/
