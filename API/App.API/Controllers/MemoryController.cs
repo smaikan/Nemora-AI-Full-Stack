@@ -84,10 +84,9 @@ namespace App.API.Controllers
             var newMemoryId = await _memoryService.CreateMemoryAsync(memory);
             return CreatedAtAction(nameof(GetMemoryById), new { id = newMemoryId }, new { newMemoryId, memory }); 
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-
-                return BadRequest(ex);
+                return BadRequest(ex.Message);
             }
            
         }

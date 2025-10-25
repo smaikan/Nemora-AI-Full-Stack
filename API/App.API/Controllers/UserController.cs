@@ -25,7 +25,7 @@ namespace App.API.Controllers
         }
 
         [Authorize]
-        [HttpGet ("loggeduser")]
+        [HttpGet("loggeduser")]
         public async Task<IActionResult> GetUserById()
         {
             var claim = User.FindFirst("userId")?.Value;
@@ -54,25 +54,33 @@ namespace App.API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser([FromBody] UserCreateDTO user)
         {
-            var newUserId = await _userService.CreateUserAsync(user);
-            if (newUserId == 0) return BadRequest("Hashlenmedi");
-            return Ok(new { userId = newUserId });
+            try
+            {
+                var newUserId = await _userService.CreateUserAsync(user);
+                if (newUserId == 0) return BadRequest("Hashlenmedi");
+                return Ok(new { userId = newUserId });
+            }
+            catch (Exception ex)
+            {
+                return  StatusCode(410, ex.Message);
+            }
+
         }
 
         [Authorize]
         [HttpPut("updateuser")]
         public async Task<IActionResult> UpdateUser([FromBody] UserCreateDTO user)
-        { 
+        {
             var claim = User.FindFirst("userId")?.Value;
             if (string.IsNullOrEmpty(claim) || !int.TryParse(claim, out var id))
                 return Unauthorized();
             var getUser = await _userService.GetUserByEmailAsync(user.UserEmail);
-            
+
             if (getUser == null || !BCrypt.Net.BCrypt.Verify(user.UserPassword, getUser.UserPasswordHash))
                 return Unauthorized("Email veya şifre yanlış.");
 
 
-            await _userService.UpdateUserAsync(id,user);
+            await _userService.UpdateUserAsync(id, user);
             return NoContent();
         }
 

@@ -47,7 +47,7 @@ namespace App.Application.Services
 
         public async Task<int> CreateMemoryAsync(MemoryCreateDTO memorydto)
         {
-            var memos = await GetAllMemoriesAsync();
+            var memos = await GetMemoryByUserIdAsync(memorydto.UserId);
             bool exists = memos.Any(m => m.MemoryCreateDate == memorydto.MemoryCreateDate);
 
             if (exists) throw new Exception("Bu tarihte zaten bir kayıt var.");

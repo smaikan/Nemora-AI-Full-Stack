@@ -191,7 +191,6 @@ if ( user == null) {
         </div>
       );
     }
-console.log(3,text);
 
 if (location.pathname === "/newpage" &&  user !== null && availableDays?.length == 0) {
       return (
@@ -209,7 +208,6 @@ if (location.pathname === "/newpage" &&  user !== null && availableDays?.length 
     <div className='flex min-h-screen w-full justify-center'>
       <div className='w-[45rem] relative flex max-h-full pt-14 px-5 my-2 border-[3px] border-[#f8c994] shadow-2xl rounded'>
 
-        {/* ✅ Tarih ve checkbox alanı */}
         <div className='absolute top-1 right-3 text-gray-700/70 flex flex-col items-end gap-[2px]'>
           {location.pathname !== "/newpage" 
           ? <div className=" text-gray-400 mb-1">{new Date(memo.memoryCreateDate).toLocaleDateString("tr-TR")}</div> 

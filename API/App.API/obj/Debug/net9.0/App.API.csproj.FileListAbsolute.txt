@@ -538,3 +538,4 @@ C:\Projects\Diary\api\App.API\obj\Debug\net9.0\refint\App.API.dll
 C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.pdb
 C:\Projects\Diary\api\app.api\obj\Debug\net9.0\App.API.genruntimeconfig.cache
 C:\Projects\Diary\api\app.api\obj\Debug\net9.0\ref\App.API.dll
+C:\Projects\Diary\api\app.api\obj\Debug\net9.0\App.API.sourcelink.json

@@ -31,3 +31,4 @@ C:\Projects\Diary\api\App.Domain\obj\Debug\net9.0\App.Domain.dll
 C:\Projects\Diary\api\App.Domain\obj\Debug\net9.0\refint\App.Domain.dll
 C:\Projects\Diary\api\App.Domain\obj\Debug\net9.0\App.Domain.pdb
 C:\Projects\Diary\api\App.Domain\obj\Debug\net9.0\ref\App.Domain.dll
+C:\Projects\Diary\api\App.Domain\obj\Debug\net9.0\App.Domain.sourcelink.json

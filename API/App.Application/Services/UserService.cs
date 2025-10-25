@@ -57,6 +57,15 @@ namespace App.Application.Services
 
         public async Task<int> CreateUserAsync(UserCreateDTO userdto)
         {
+
+            var existingUser = await GetUserByEmailAsync(userdto.UserEmail);
+
+            if (existingUser != null)
+            {
+                throw new Exception("Bu e-posta adresiyle zaten bir kullanıcı mevcut.");
+            }
+
+
             string hashed = BCrypt.Net.BCrypt.HashPassword(userdto.UserPassword);
             bool isValid = BCrypt.Net.BCrypt.Verify(userdto.UserPassword, hashed);
             if (isValid)
@@ -72,12 +81,12 @@ namespace App.Application.Services
                 return user.UserId;
             }
             return 0;
-         
+
         }
 
 
 
-        public async Task UpdateUserAsync(int id,UserCreateDTO userDTO)
+        public async Task UpdateUserAsync(int id, UserCreateDTO userDTO)
         {
             string hashed = BCrypt.Net.BCrypt.HashPassword(userDTO.UserPassword);
             var UpdatingUser = await _userRepository.GetByIdAsync(id);
@@ -85,7 +94,7 @@ namespace App.Application.Services
             UpdatingUser.UserName = userDTO.UserName;
             UpdatingUser.UserSurname = userDTO.UserSurname;
             UpdatingUser.UserEmail = userDTO.UserEmail;
-            UpdatingUser.UserPasswordHash= hashed;
+            UpdatingUser.UserPasswordHash = hashed;
 
             await _userRepository.UpdateAsync(UpdatingUser);
         }

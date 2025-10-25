@@ -41,7 +41,6 @@ const moodPoints = useMemo(() => {
   const moodArray: number[] = [];
 
   if (range === "week") {
-    // 🔸 Son 7 gün
     const sevenDaysAgo = new Date();
     sevenDaysAgo.setDate(now.getDate() - 7);
 
@@ -50,12 +49,10 @@ const moodPoints = useMemo(() => {
       return d >= sevenDaysAgo && d <= now;
     });
 
-    // Her günün verisini ekle (varsa)
     weekData.forEach(m => moodArray.push(m.memoryMood ?? 0));
   }
 
   else if (range === "month") {
-    // 🔸 Son 3 ay (yaklaşık 90 gün)
     const ninetyDaysAgo = new Date();
     ninetyDaysAgo.setDate(now.getDate() - 90);
 
@@ -90,7 +87,6 @@ for (let i = 0; i < totalWeeks; i++) {
   }
 
   else if (range === "year") {
-    // 🔸 Son 1 yıl
     const yearAgo = new Date();
     yearAgo.setFullYear(now.getFullYear() - 1);
 
@@ -99,7 +95,6 @@ for (let i = 0; i < totalWeeks; i++) {
       return d >= yearAgo && d <= now;
     });
 
-    // 12 aylık ortalama
     for (let i = 0; i < 12; i++) {
       const monthStart = new Date(yearAgo.getFullYear(), yearAgo.getMonth() + i, 1);
       const monthEnd = new Date(yearAgo.getFullYear(), yearAgo.getMonth() + i + 1, 1);
@@ -114,7 +109,6 @@ for (let i = 0; i < totalWeeks; i++) {
           monthChunk.reduce((s, it) => s + (it.memoryMood ?? 0), 0) / monthChunk.length;
         moodArray.unshift(Math.round(avg));
       }
-      // o ayda hiç veri yoksa 0 ekle
       else {
         moodArray.push(0);
       }
@@ -151,17 +145,16 @@ for (let i = 0; i < totalWeeks; i++) {
                 <div className="text-xs text-[#5e5346]/70">Son {range === "week" ? 7 : range === "month" ? 30 : 90} gün {range == "month" ? "(Haftalara göre)": range == "year" && "Aylara göre" }</div>
               </div>
 
-              {/* DateRangeToggle'i buraya yerleştirdim */}
               <DateRangeToggle value={range} onChange={setRange} />
             </div>
-            <MoodChart points={moodPoints} />
-            <div className="mt-3 flex items-center gap-4 text-sm text-[#5e5346]">
-              <div className="flex items-center gap-2">
+            <MoodChart Memory={user?.memories} points={moodPoints} />
+          {user?.memories.length !== 0 &&  <div className="mt-3 flex items-center gap-4 text-sm text-[#5e5346]">
+             <div className="flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-[#f6c37e]" />
                 Ortalama ruh hali: <strong className="ml-1">{weeklySummary.avgMood}</strong>
-              </div>
+              </div> 
               <div className="text-[#5e5346]/60">Günlük giriş sayısı: <strong className="ml-1">{moodPoints.length > 0 && moodPoints.length}</strong></div>
-            </div>
+            </div> }
           </div>
 
           <WeeklySummary summary={weeklySummary} />

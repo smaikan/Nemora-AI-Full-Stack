@@ -17,3 +17,4 @@ C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\refint\App.Persistence.dl
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.pdb
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.genruntimeconfig.cache
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\ref\App.Persistence.dll
+C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.sourcelink.json

@@ -1,7 +1,23 @@
 
-const MoodChart: React.FC<{ points: number[] }> = ({ points }) => {
+type props = {
+  Memory:
+  {memoryId: number;
+  memoryCreateDate: string;
+  memoryText: string | null;
+  userId?: number;
+  memoryUpdateDate?: string | null;
+  memoryMood?: number | null;
+  memorySummary?: string | null;}[],
+  points: number[];
+};
+
+const MoodChart: React.FC<props> = ({Memory, points }) => {
   const max = 10;
-  console.log(points)
+
+   if (!Memory || Memory.length === 0) {
+    return <div className="p-2 rounded-lg bg-red-200"> Analiz edilecek sayfa bulunamadı. Lütfen günlüğünüze sayfa ekleyin.</div>;
+  }
+
   return (
     <div className="w-full h-40">
       <svg viewBox="0 0 200 80" className="w-full h-full">
