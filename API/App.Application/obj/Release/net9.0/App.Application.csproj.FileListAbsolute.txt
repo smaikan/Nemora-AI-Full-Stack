@@ -1,0 +1,16 @@
+C:\Projects\Diary\api\App.Application\bin\Release\net9.0\App.Application.deps.json
+C:\Projects\Diary\api\App.Application\bin\Release\net9.0\App.Application.dll
+C:\Projects\Diary\api\App.Application\bin\Release\net9.0\App.Application.pdb
+C:\Projects\Diary\api\App.Application\bin\Release\net9.0\App.Domain.dll
+C:\Projects\Diary\api\App.Application\bin\Release\net9.0\App.Domain.pdb
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\App.Application.csproj.AssemblyReference.cache
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\App.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\App.Application.AssemblyInfoInputs.cache
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\App.Application.AssemblyInfo.cs
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\App.Application.csproj.CoreCompileInputs.cache
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\App.Application.sourcelink.json
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\App.Appl.090A7001.Up2Date
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\App.Application.dll
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\refint\App.Application.dll
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\App.Application.pdb
+C:\Projects\Diary\api\App.Application\obj\Release\net9.0\ref\App.Application.dll

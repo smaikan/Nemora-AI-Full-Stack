@@ -358,12 +358,20 @@ C:\Users\serha\OneDrive\Masaüstü\Diary App\diary\api\app.api\obj\Debug\net9.0\
 C:\Users\serha\OneDrive\Masaüstü\Diary App\diary\api\app.api\obj\Debug\net9.0\App.API.pdb
 C:\Users\serha\OneDrive\Masaüstü\Diary App\diary\api\app.api\obj\Debug\net9.0\App.API.genruntimeconfig.cache
 C:\Users\serha\OneDrive\Masaüstü\Diary App\diary\api\app.api\obj\Debug\net9.0\ref\App.API.dll
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.csproj.AssemblyReference.cache
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.AssemblyInfoInputs.cache
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.AssemblyInfo.cs
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.csproj.CoreCompileInputs.cache
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.sourcelink.json
 C:\Projects\Diary\api\App.API\bin\Debug\net9.0\appsettings.Development.json
 C:\Projects\Diary\api\App.API\bin\Debug\net9.0\appsettings.json
 C:\Projects\Diary\api\App.API\bin\Debug\net9.0\App.API.staticwebassets.endpoints.json
 C:\Projects\Diary\api\App.API\bin\Debug\net9.0\App.API.exe
-C:\Projects\Diary\api\app.api\bin\Debug\net9.0\App.API.deps.json
-C:\Projects\Diary\api\app.api\bin\Debug\net9.0\App.API.runtimeconfig.json
+C:\Projects\Diary\api\App.API\bin\Debug\net9.0\App.API.deps.json
+C:\Projects\Diary\api\App.API\bin\Debug\net9.0\App.API.runtimeconfig.json
 C:\Projects\Diary\api\App.API\bin\Debug\net9.0\App.API.dll
 C:\Projects\Diary\api\App.API\bin\Debug\net9.0\App.API.pdb
 C:\Projects\Diary\api\App.API\bin\Debug\net9.0\AutoMapper.dll
@@ -515,13 +523,6 @@ C:\Projects\Diary\api\App.API\bin\Debug\net9.0\App.Persistence.dll
 C:\Projects\Diary\api\App.API\bin\Debug\net9.0\App.Application.pdb
 C:\Projects\Diary\api\App.API\bin\Debug\net9.0\App.Persistence.pdb
 C:\Projects\Diary\api\App.API\bin\Debug\net9.0\App.Domain.pdb
-C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.csproj.AssemblyReference.cache
-C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.AssemblyInfoInputs.cache
-C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.AssemblyInfo.cs
-C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.csproj.CoreCompileInputs.cache
-C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\Diary\api\App.API\obj\Debug\net9.0\scopedcss\bundle\App.API.styles.css
 C:\Projects\Diary\api\App.API\obj\Debug\net9.0\staticwebassets.build.json
 C:\Projects\Diary\api\App.API\obj\Debug\net9.0\staticwebassets.development.json
@@ -532,10 +533,9 @@ C:\Projects\Diary\api\App.API\obj\Debug\net9.0\staticwebassets\msbuild.build.App
 C:\Projects\Diary\api\App.API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.App.API.props
 C:\Projects\Diary\api\App.API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.App.API.props
 C:\Projects\Diary\api\App.API\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Projects\Diary\api\app.api\obj\Debug\net9.0\App.API.csproj.Up2Date
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.csproj.Up2Date
 C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.dll
 C:\Projects\Diary\api\App.API\obj\Debug\net9.0\refint\App.API.dll
 C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.pdb
-C:\Projects\Diary\api\app.api\obj\Debug\net9.0\App.API.genruntimeconfig.cache
-C:\Projects\Diary\api\app.api\obj\Debug\net9.0\ref\App.API.dll
-C:\Projects\Diary\api\app.api\obj\Debug\net9.0\App.API.sourcelink.json
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\App.API.genruntimeconfig.cache
+C:\Projects\Diary\api\App.API\obj\Debug\net9.0\ref\App.API.dll

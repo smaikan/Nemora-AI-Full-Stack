@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using System.Text.Json;
 using App.Application.Contracts.Persistence;
+using App.Application.Contracts.Services;
 using App.Application.Dto_s.Memory;
 using App.Application.Dto_s.User;
 using App.Domain.Entities;
@@ -9,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace App.Application.Services
 {
-    public class MemoryService
+    public class MemoryService : IMemoryService
     {
         private readonly IMemoryRepository _memoryRepository;
         private readonly HttpClient _httpClient;
@@ -47,7 +48,12 @@ namespace App.Application.Services
 
         public async Task<int> CreateMemoryAsync(MemoryCreateDTO memorydto)
         {
-            var memos = await GetMemoryByUserIdAsync(memorydto.UserId);
+            ArgumentNullException.ThrowIfNull(memorydto);
+
+            if (string.IsNullOrWhiteSpace(memorydto.MemoryText))
+                throw new ArgumentException("Memory text boş olamaz");
+
+            var memos = await GetMemoryByUserIdAsync(memorydto.UserId) ?? [];
             bool exists = memos.Any(m => m.MemoryCreateDate == memorydto.MemoryCreateDate);
 
             if (exists) throw new Exception("Bu tarihte zaten bir kayıt var.");
@@ -57,7 +63,7 @@ namespace App.Application.Services
             {
                 UserId = memorydto.UserId,
                 MemoryText = memorydto.MemoryText,
-                MemoryCreateDate = memorydto.MemoryCreateDate ?? DateOnly.FromDateTime(DateTime.Now),
+                MemoryCreateDate = memorydto.MemoryCreateDate,
                 MemoryMood = analizResult.Mood,
                 MemorySummary = analizResult.Summary,
                 IsFavorite = false
@@ -69,6 +75,11 @@ namespace App.Application.Services
 
         public async Task<GeminiResultDTO> AnalyzeTextAsync(string text)
         {
+
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Testing")
+            {
+                return new GeminiResultDTO { Mood = 5, Summary = "Fake summary" };
+            }
 
             var requestBody = new
             {
@@ -160,24 +171,24 @@ namespace App.Application.Services
             await _memoryRepository.UpdateAsync(memory);
         }
 
-         public async Task UpdateFavoriteMemoryAsync(int id)
+        public async Task UpdateFavoriteMemoryAsync(int id)
         {
             var memory = await _memoryRepository.GetByIdAsync(id);
             if (memory == null)
                 throw new Exception("Memory not found");
 
             memory.IsFavorite = !memory.IsFavorite;
-           
+
             await _memoryRepository.UpdateAsync(memory);
         }
 
-        public async Task DeleteMemoryAsync(int id)
+        public async Task DeleteMemoryAsync(int id, int userid)
         {
-            var memory = await _memoryRepository.GetByIdAsync(id);
-            if (memory != null)
-            {
-                await _memoryRepository.DeleteAsync(memory);
-            }
+            var memory = await _memoryRepository.GetByIdAsync(id) ?? throw new Exception("Memory not found");
+            if (memory.UserId != userid) { throw new Exception("Silmeye yetkiniz yok"); }
+
+            await _memoryRepository.DeleteAsync(memory);
+
         }
     }
 }

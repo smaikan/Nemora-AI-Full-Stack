@@ -10,7 +10,7 @@ namespace App.Application.Dto_s.Memory
     {
         public int UserId { get; set; }
         public string MemoryText { get; set; }
-        public DateOnly? MemoryCreateDate { get; set; }
+        public DateOnly MemoryCreateDate { get; set; } = DateOnly.FromDateTime(DateTime.Now);
         
     }
 }

@@ -11,10 +11,10 @@ C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.Generated
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.AssemblyInfoInputs.cache
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.AssemblyInfo.cs
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.csproj.CoreCompileInputs.cache
+C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.sourcelink.json
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Pers.C3A6D0CD.Up2Date
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.dll
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\refint\App.Persistence.dll
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.pdb
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.genruntimeconfig.cache
 C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\ref\App.Persistence.dll
-C:\Projects\Diary\api\App.Persistence\obj\Debug\net9.0\App.Persistence.sourcelink.json

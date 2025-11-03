@@ -102,8 +102,7 @@
               "RelativeToolTip": "App.Application\\Services\\UserService.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T07:01:03.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T07:01:03.9Z"
             },
             {
               "$type": "Document",
@@ -115,8 +114,7 @@
               "RelativeToolTip": "App.Domain\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T00:52:53.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T00:52:53.904Z"
             },
             {
               "$type": "Document",
@@ -128,8 +126,7 @@
               "RelativeToolTip": "App.Domain\\Entities\\Memory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T02:19:40.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T02:19:40.471Z"
             },
             {
               "$type": "Document",
@@ -154,8 +151,7 @@
               "RelativeToolTip": "App.Persistence\\ServiceRegistration.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAIwBwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T02:56:25.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T02:56:25.51Z"
             },
             {
               "$type": "Document",
@@ -167,8 +163,7 @@
               "RelativeToolTip": "App.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-01T01:41:31.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T01:41:31.331Z"
             },
             {
               "$type": "Document",
@@ -180,8 +175,7 @@
               "RelativeToolTip": "App.Application\\Dto\u0027s\\User\\UserCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:22:22.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:22:22.485Z"
             },
             {
               "$type": "Document",
@@ -193,8 +187,7 @@
               "RelativeToolTip": "App.Application\\Dto\u0027s\\Memory\\MemoryCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:30:00.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:30:00.136Z"
             },
             {
               "$type": "Document",
@@ -206,8 +199,7 @@
               "RelativeToolTip": "App.Application\\Dto\u0027s\\Memory\\MemoryUpdateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T04:43:21.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T04:43:21.038Z"
             },
             {
               "$type": "Document",
@@ -219,8 +211,7 @@
               "RelativeToolTip": "App.Persistence\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T07:25:03.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T07:25:03.881Z"
             },
             {
               "$type": "Document",
@@ -232,8 +223,7 @@
               "RelativeToolTip": "App.Persistence\\App.Persistence.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-01T01:46:56.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T01:46:56.322Z"
             },
             {
               "$type": "Document",
@@ -263,8 +253,7 @@
               "RelativeToolTip": "App.Application\\Contracts\\Persistence\\IMemoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T07:15:21.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T07:15:21.667Z"
             },
             {
               "$type": "Document",
@@ -276,8 +265,7 @@
               "RelativeToolTip": "App.API\\Controllers\\UserController.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAkwC4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T07:09:52.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T07:09:52.783Z"
             },
             {
               "$type": "Document",
@@ -302,8 +290,7 @@
               "RelativeToolTip": "App.Persistence\\MemoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T06:51:16.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T06:51:16.684Z"
             },
             {
               "$type": "Document",
@@ -315,8 +302,7 @@
               "RelativeToolTip": "App.Application\\Contracts\\Persistence\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T07:15:33.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T07:15:33.293Z"
             },
             {
               "$type": "Document",
@@ -328,8 +314,7 @@
               "RelativeToolTip": "App.Persistence\\UserRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCoAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T04:10:33.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T04:10:33.393Z"
             },
             {
               "$type": "Document",
@@ -341,8 +326,7 @@
               "RelativeToolTip": "App.API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T01:52:12.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T01:52:12.085Z"
             },
             {
               "$type": "Document",
@@ -354,8 +338,7 @@
               "RelativeToolTip": "App.Application\\Dto\u0027s\\User\\LoginDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T21:46:00.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T21:46:00.335Z"
             }
           ]
         }

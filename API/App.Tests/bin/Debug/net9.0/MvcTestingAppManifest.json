@@ -1,0 +1,6 @@
+{
+  "App.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projects\\Diary\\api\\App.API",
+  "App.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projects\\Diary\\api\\App.Application",
+  "App.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projects\\Diary\\api\\App.Domain",
+  "App.Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projects\\Diary\\api\\App.Persistence"
+}

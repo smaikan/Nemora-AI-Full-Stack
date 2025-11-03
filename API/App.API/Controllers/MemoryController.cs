@@ -4,6 +4,7 @@ using App.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using App.Application.Dto_s.Memory;
 using Microsoft.AspNetCore.Authorization;
+using App.Application.Contracts.Services;
 
 namespace App.API.Controllers
 {
@@ -11,20 +12,29 @@ namespace App.API.Controllers
     [Route("api/[controller]")]
     public class MemoryController : ControllerBase
     {
-        private readonly MemoryService _memoryService;
+        private readonly IMemoryService _memoryService;
 
-        public MemoryController(MemoryService memoryService)
+        public MemoryController(IMemoryService memoryService)
         {
             _memoryService = memoryService;
         }
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAllMemories()
-        {
-            var memories = await _memoryService.GetAllMemoriesAsync();
-            return Ok(memories);
-        }
+public async Task<IActionResult> GetAllMemories()
+{
+    try
+    {
+        var memories = await _memoryService.GetAllMemoriesAsync();
+        return Ok(memories);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("ERROR IN CONTROLLER: " + ex);
+        return StatusCode(500, ex.ToString());
+    }
+}
+
 
 
         [Authorize]
@@ -86,6 +96,7 @@ namespace App.API.Controllers
             }
             catch (Exception ex)
             {
+                Console.WriteLine($"ERROR in CreateMemory: {ex}");
                 return BadRequest(ex.Message);
             }
            
@@ -162,8 +173,7 @@ namespace App.API.Controllers
 
             try
             {
-                var existingMemory = await _memoryService.GetMemoryByIdAsync(id, userId);
-                await _memoryService.DeleteMemoryAsync(id);
+                await _memoryService.DeleteMemoryAsync(id, userId);
                 return NoContent();
 
             }

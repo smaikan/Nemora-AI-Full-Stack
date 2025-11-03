@@ -1,5 +1,8 @@
+
+using App.API;
 using App.Application.Services;
 using App.Persistence;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +16,16 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader();
     });
 });
-builder.Services.AddPersistence(builder.Configuration);
+if (!builder.Environment.IsEnvironment("Testing"))
+{
+    builder.Services.AddPersistence(builder.Configuration);
+}
+else
+{
+    builder.Services
+    .AddAuthentication("Test")
+    .AddScheme<AuthenticationSchemeOptions, TestAuthHandler>("Test", _ => { });
+}
 builder.Services.AddScoped<UserService>();
 builder.Services.AddHttpClient<MemoryService>();
 builder.Services.AddControllers();
@@ -69,4 +81,17 @@ app.UseCors("AllowAll");
 
 app.MapControllers();
 
-app.Run();
+try
+{
+    app.Run();
+}
+catch (Exception ex)
+{
+    Console.WriteLine("APP STARTUP ERROR:");
+    Console.WriteLine(ex);
+    throw;
+}
+
+
+
+public partial class Program { }
