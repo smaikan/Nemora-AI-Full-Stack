@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xw0/I4IgFlQ=",
+  "dgSpecHash": "nwSFU30RA4g=",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Diary\\api\\App.API\\App.API.csproj",
+  "projectFilePath": "C:\\Projects\\Diary\\api\\app.api\\App.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\serha\\.nuget\\packages\\automapper\\15.0.1\\automapper.15.0.1.nupkg.sha512",
     "C:\\Users\\serha\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

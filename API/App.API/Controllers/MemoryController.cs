@@ -91,8 +91,10 @@ public async Task<IActionResult> GetAllMemories()
          
             try
             {
-            var newMemoryId = await _memoryService.CreateMemoryAsync(memory);
-            return CreatedAtAction(nameof(GetMemoryById), new { id = newMemoryId }, new { newMemoryId, memory }); 
+                var newMemoryId = await _memoryService.CreateMemoryAsync(memory);
+            var createdMemory = await _memoryService.GetMemoryByIdAsync(newMemoryId, userId);
+
+            return CreatedAtAction(nameof(GetMemoryById), new { id = newMemoryId }, new { newMemoryId, createdMemory.MemoryMood, createdMemory.MemorySummary }); 
             }
             catch (Exception ex)
             {

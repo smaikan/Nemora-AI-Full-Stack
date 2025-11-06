@@ -1,5 +1,6 @@
 
 using App.API;
+using App.Application.Contracts.Services;
 using App.Application.Services;
 using App.Persistence;
 using Microsoft.AspNetCore.Authentication;
@@ -27,7 +28,7 @@ else
     .AddScheme<AuthenticationSchemeOptions, TestAuthHandler>("Test", _ => { });
 }
 builder.Services.AddScoped<UserService>();
-builder.Services.AddHttpClient<MemoryService>();
+builder.Services.AddHttpClient<IMemoryService,MemoryService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
