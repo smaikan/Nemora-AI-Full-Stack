@@ -36,13 +36,13 @@ const Login = ({loggedIn, setCreate}: LoginProps) => {
                 userPassword: newuser.password
             });
             localStorage.setItem("token", response.data.token);
-            setError(null); // ✅ Başarılı girişte hata mesajını temizle
+            setError(null);
             UsertoStore();
             loggedIn(true);
             navigate("/");
         } catch (error) {
             console.error(error);
-            setError("E-posta veya şifre hatalı."); // ✅ Hata mesajı
+            setError("E-posta veya şifre hatalı."); 
         }
     };
     

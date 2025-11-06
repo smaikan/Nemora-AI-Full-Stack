@@ -115,8 +115,8 @@ setLoading(true);
           memoryCreateDate: selectedDate,
           memoryUpdateDate: null,
           userId: user.id,
-          memoryMood: memo?.memoryMood ?? null,
-          memorySummary: memo?.memorySummary ?? null,
+          memoryMood: memo?.memoryMood ?? response.data.memoryMood ?? null,
+          memorySummary: memo?.memorySummary ?? response.data.memorySummary ??  null,
           isFavorite: memo?.isFavorite
         }));
         setReadonlyState(true);
