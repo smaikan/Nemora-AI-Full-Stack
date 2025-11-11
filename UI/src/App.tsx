@@ -11,6 +11,7 @@ import PrivateRoute from "./Components/Privateroute";
 import Memories from "./Layers/memories";
 import Memorypage from "./Layers/memories/Memorypage";
 import Mainpage from "./Layers/mainpage";
+import LandingPage from "./Layers/Login/LandingPage";
 function App() {
   const token = localStorage.getItem("token");  
    const [isLoggedIn, setIsLoggedIn] = useState(token ? true : false); 
@@ -32,10 +33,13 @@ function App() {
 }, [dispatch]);
 console.log(1,user);
   return (
-   <div className="bg-[#f6ede4] flex min-h-screen">
+   <div className="bg-base flex min-h-screen">
    {isLoggedIn && <Sidebar loggedIn={setIsLoggedIn} />}
+
     <Routes>
-      {!isLoggedIn && <Route path="authentication" element={<Auth loggedIn={setIsLoggedIn} />} />}
+      
+      {!isLoggedIn && <Route path="authentication" element={<Auth loggedIn={setIsLoggedIn} />} /> }
+      {!isLoggedIn && <Route path="/welcome" element={<LandingPage/>}/>}
         <Route element={<PrivateRoute isLogged={isLoggedIn} />}>
             <Route path="/" element={<Mainpage/>}/>
             <Route path="newpage" element={<Newpage />} />

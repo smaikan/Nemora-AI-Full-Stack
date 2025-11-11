@@ -3,6 +3,79 @@
 @theme {
   --font-manrope: "Manrope", sans-serif;
   --font-hand: "Patrick Hand", cursive;
+  
+  /* Primary colors */
+  --color-primary: #f8c994;
+  --color-primary-hover: #e2b680;
+  --color-primary-light: #f5e1b8;
+  --color-primary-dark: #c3a277;
+  --color-primary-darker: #846f53;
+  --color-primary-darkest: #5e5346;
+  
+  /* Background colors */
+  --color-base: #f6ede4;
+  --color-base-dark: #2a241f;
+  
+  /* Panel/Surface colors */
+  --color-panel: #fff9f3;
+  --color-panel-alt: #fff7ea;
+  --color-panel-alt2: #f6e3d0;
+  --color-panel-alt3: #fffaf5;
+  --color-panel-hover: #fef3e7;
+  --color-panel-dark: #3a3329;
+  --color-panel-dark-alt: #4a4236;
+  
+  /* Text colors */
+  --color-content-primary: #463b2d;
+  --color-content-secondary: #5e5346;
+  --color-content-tertiary: #4f412f;
+  --color-content-muted: #66513e;
+  --color-content-dark-primary: #f5e1b8;
+  --color-content-dark-secondary: #d9b58d;
+  --color-content-dark-muted: #c3a277;
+  
+  /* Border colors */
+  --color-edge-primary: #5e5346;
+  --color-edge-secondary: #e0c9a6;
+  --color-edge-tertiary: #efe0c8;
+  --color-edge-light: #ead7bf;
+  --color-edge-lighter: #e2cfba;
+  --color-edge-accent: #fec9a4;
+  --color-edge-ring: #d9b58d;
+  --color-edge-dark-primary: #5e5346;
+  --color-edge-dark-secondary: #4a4236;
+  --color-edge-dark-light: #3a3329;
+  
+  /* Button colors */
+  --color-button-primary: #f8c994;
+  --color-button-hover: #e2b680;
+  --color-button-active: #c3a277;
+  --color-button-disabled: #846f53;
+  --color-button-light: #ffd7aa;
+  --color-button-dark-primary: #c3a277;
+  --color-button-dark-hover: #d9b58d;
+  --color-button-dark-active: #846f53;
+  
+  /* Interactive colors */
+  --color-interactive: #fae0c3;
+  --color-interactive-hover: #f8c994;
+  --color-interactive-selected: #f3e0c9;
+  --color-interactive-ring: #d9b58d;
+  --color-interactive-dark: #4a4236;
+  --color-interactive-dark-hover: #5e5346;
+  --color-interactive-dark-selected: #3a3329;
+  
+  /* Special colors */
+  --color-caret: #fab584;
+  --color-mood-indicator: #f6c37e;
+  --color-focus-ring: #e2b680;
+  --color-gradient-start: #f8c994;
+  --color-gradient-end: #f5e1b8;
+  --color-gradient-landing-start: #F9FAFB;
+  --color-gradient-landing-end: #fdeec7;
+  --color-chart-start: #ffd89b;
+  --color-chart-end: #f6e3d5;
+  --color-icon-inactive: #8a7a60;
 }
 
 body {

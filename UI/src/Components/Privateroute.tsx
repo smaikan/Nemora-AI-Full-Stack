@@ -5,7 +5,7 @@ type PrivateRouteProps = {
 
 const PrivateRoute = ({isLogged}:PrivateRouteProps) => {
   if (!isLogged) {
-  return <Navigate to="/authentication" replace />;
+  return <Navigate to="/welcome" replace />;
 }
 return <Outlet />;
 };

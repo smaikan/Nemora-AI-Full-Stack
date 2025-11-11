@@ -14,21 +14,21 @@ const SidebarMenu: React.FC<SidebarItemProps> = ({ onClick, route, children }) =
       onClick={onClick}
       className={({ isActive }) =>
         `relative flex items-center gap-3 px-4 py-3 rounded-md text-sm font-semibold transition-colors duration-150
-         ${isActive ? "bg-[#f6ede4] text-[#5e5346] shadow-inner" : "text-[#5e5346]/90 hover:bg-[#f6e3d0]" }`
+         ${isActive ? "bg-base dark:bg-panel-dark text-content-secondary dark:text-content-dark-secondary shadow-inner" : "text-content-secondary/90 dark:text-content-dark-secondary/90 hover:bg-panel-alt2 dark:hover:bg-panel-dark-alt" }`
       }
       aria-current="page"
     >
       {({ isActive }: { isActive: boolean }) =>
         <>
-          {isActive && <span className="absolute left-0 top-0 bottom-0 w-1 bg-[#5e5346] rounded-r-md" />}
+          {isActive && <span className="absolute left-0 top-0 bottom-0 w-1 bg-edge-primary dark:bg-edge-dark-primary rounded-r-md" />}
           <span className="flex items-center gap-3 w-full pl-1">
         
          {route == "/newpage" 
-          ? (<FilePlus className={`w-4 h-4 ${isActive ? "text-[#5e5346]" : "text-[#8a7a60]"}`} />) 
-          : route == "/" ? (<House className={`w-4 h-4 ${isActive ? "text-[#5e5346]" : "text-[#8a7a60]"}`} />) 
-          : route == "/memories" ? (<NotebookTabs className={`w-4 h-4 ${isActive ? "text-[#5e5346]" : "text-[#8a7a60]"}`} />)
-          : route == "/authentication" ? (<LogOut className={`w-4 h-4 ${isActive ? "text-[#5e5346]" : "text-[#8a7a60]"}`} />) 
-          : (<Settings className={`w-4 h-4 ${isActive ? "text-[#5e5346]" : "text-[#8a7a60]"}`} />)
+          ? (<FilePlus className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />) 
+          : route == "/" ? (<House className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />) 
+          : route == "/memories" ? (<NotebookTabs className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />)
+          : route == "/authentication" ? (<LogOut className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />) 
+          : (<Settings className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />)
          }   
             <span className="truncate">{children}</span>
             

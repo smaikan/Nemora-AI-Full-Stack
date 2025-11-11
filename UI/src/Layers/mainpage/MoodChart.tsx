@@ -33,7 +33,7 @@ const MoodChart: React.FC<props> = ({Memory, points }) => {
           return (
             <g key={i}>
               <rect x={x} y={75 - h} width={12} height={h} rx={3} fill="url(#g)" className="transition-all duration-200 hover:opacity-90" />
-              <text x={x + 6} y={78} fontSize="8" textAnchor="middle" fill="#66513e">
+              <text x={x + 6} y={78} fontSize="8" textAnchor="middle" fill="#66513e" className="dark:fill-text-dark-muted">
                 {i === points.length - 1 ? "Şimdi" : `${i + 1}`}
               </text>
             </g>

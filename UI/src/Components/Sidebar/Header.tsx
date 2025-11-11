@@ -26,27 +26,27 @@ const Header = ({ loggedIn }: HeaderProps) => {
 
   const handleLogout = () => {
     dispatch(logout()); 
-    navigate('/authentication');
     loggedIn(false);
+    navigate('/');
     console.log("Logged out");  
   };
   return (
     <>
-    <div className='h-10 mb-3 w-full  font-extrabold  flex items-center justify-center  text-black'>
+    <div className='h-10 mb-3 w-full  font-extrabold  flex items-center justify-center  text-black dark:text-content-dark-primary'>
         <div className="flex items-center gap-3 w-full">
-        <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center text-lg font-semibold text-[#5e5346] shadow">
+        <div className="w-12 h-12 rounded-full bg-white/90 dark:bg-panel-dark/90 flex items-center justify-center text-lg font-semibold text-content-secondary dark:text-content-dark-secondary shadow">
           {initials}
         </div>
         <div className="flex flex-col">
-          <div className="text-sm font-semibold text-[#463b2d] leading-4">{name + " " + surname}</div>
-          <div className="text-xs text-[#463b2d]/70 mt-0.5">{email}</div>
-          <div className="text-xs text-[#5e5346]/60 mt-1">{memoryCount} anı</div>
+          <div className="text-sm font-semibold text-content-primary dark:text-content-dark-primary leading-4">{name + " " + surname}</div>
+          <div className="text-xs text-content-primary/70 dark:text-content-dark-primary/70 mt-0.5">{email}</div>
+          <div className="text-xs text-content-secondary/60 dark:text-content-dark-secondary/60 mt-1">{memoryCount} anı</div>
         </div>
       </div>
         </div>
-        <div className='mb-8  pb-2 border-b-[1px] border-[#5e5346]'> 
+        <div className='mb-8  pb-2 border-b-[1px] border-edge-primary dark:border-edge-dark-primary'> 
         <SidebarMenu route="yok">Hesap Ayarları</SidebarMenu>
-        <SidebarMenu onClick={handleLogout} route="/authentication">Çıkış Yap</SidebarMenu>
+        <SidebarMenu onClick={handleLogout} route="/welcome">Çıkış Yap</SidebarMenu>
         </div>
         
     </>

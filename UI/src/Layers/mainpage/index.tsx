@@ -138,22 +138,22 @@ for (let i = 0; i < totalWeeks; i++) {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <section className="lg:col-span-2 space-y-6">
-          <div className="bg-white rounded-xl p-5 shadow-sm border border-[#efe0c8]">
+          <div className="bg-white dark:bg-panel-dark rounded-xl p-5 shadow-sm border border-edge-tertiary dark:border-edge-dark-secondary">
             <div className="flex items-center justify-between mb-3">
               <div>
-                <h2 className="text-lg font-semibold text-[#463b2d]">Ruh Hali ({range === "week" ? "Haftalık" : range === "month" ? "3 Aylık" : "Yıllık"})</h2>
-                <div className="text-xs text-[#5e5346]/70">Son {range === "week" ? 7 : range === "month" ? 30 : 90} gün {range == "month" ? "(Haftalara göre)": range == "year" && "Aylara göre" }</div>
+                <h2 className="text-lg font-semibold text-content-primary dark:text-content-dark-primary">Ruh Hali ({range === "week" ? "Haftalık" : range === "month" ? "3 Aylık" : "Yıllık"})</h2>
+                <div className="text-xs text-content-secondary/70 dark:text-content-dark-secondary/70">Son {range === "week" ? 7 : range === "month" ? 30 : 90} gün {range == "month" ? "(Haftalara göre)": range == "year" && "Aylara göre" }</div>
               </div>
 
               <DateRangeToggle value={range} onChange={setRange} />
             </div>
             <MoodChart Memory={user?.memories} points={moodPoints} />
-          {user?.memories.length !== 0 &&  <div className="mt-3 flex items-center gap-4 text-sm text-[#5e5346]">
+          {user?.memories.length !== 0 &&  <div className="mt-3 flex items-center gap-4 text-sm text-content-secondary dark:text-content-dark-secondary">
              <div className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded-full bg-[#f6c37e]" />
+                <span className="w-3 h-3 rounded-full bg-mood-indicator" />
                 Ortalama ruh hali: <strong className="ml-1">{weeklySummary.avgMood}</strong>
               </div> 
-              <div className="text-[#5e5346]/60">Günlük giriş sayısı: <strong className="ml-1">{moodPoints.length > 0 && moodPoints.length}</strong></div>
+              <div className="text-content-secondary/60 dark:text-content-dark-secondary/60">Günlük giriş sayısı: <strong className="ml-1">{moodPoints.length > 0 && moodPoints.length}</strong></div>
             </div> }
           </div>
 
@@ -163,12 +163,12 @@ for (let i = 0; i < totalWeeks; i++) {
         </section>
 
         <aside className="space-y-6">
-          <div className="bg-white rounded-xl p-4 shadow-sm border border-[#efe0c8]">
-            <h3 className="text-sm font-semibold text-[#463b2d] mb-2">Kısa Özet</h3>
-            <div className="text-xs text-[#5e5346]/75">
+          <div className="bg-white dark:bg-panel-dark rounded-xl p-4 shadow-sm border border-edge-tertiary dark:border-edge-dark-secondary">
+            <h3 className="text-sm font-semibold text-content-primary dark:text-content-dark-primary mb-2">Kısa Özet</h3>
+            <div className="text-xs text-content-secondary/75 dark:text-content-dark-secondary/75">
               Günlük veri: <strong className="ml-1">{memories.length}</strong>
             </div>
-            <div className="text-xs text-[#5e5346]/75 mt-2">
+            <div className="text-xs text-content-secondary/75 dark:text-content-dark-secondary/75 mt-2">
               Son güncelleme: <strong className="ml-1">{formatShortDate(memories.slice(-1)[0]?.memoryCreateDate)}</strong>
             </div>
           </div>

@@ -13,15 +13,15 @@ const formatShortDate = (iso?: string) =>
 
 const RecentMemories: React.FC<{ recent: Memory[] }> = ({ recent }) => {
   return (
-    <div className="bg-white rounded-xl p-4 shadow-sm border border-[#efe0c8]">
-      <h3 className="text-sm font-semibold text-[#463b2d] mb-3">Son Anılar</h3>
+    <div className="bg-white dark:bg-panel-dark rounded-xl p-4 shadow-sm border border-edge-tertiary dark:border-edge-dark-secondary">
+      <h3 className="text-sm font-semibold text-content-primary dark:text-content-dark-primary mb-3">Son Anılar</h3>
       <ul className="space-y-3">
-        {recent.length === 0 && <li className="text-sm text-[#5e5346]/70">Henüz anı yok.</li>}
+        {recent.length === 0 && <li className="text-sm text-content-secondary/70 dark:text-content-dark-secondary/70">Henüz anı yok.</li>}
         {recent.map((m: Memory) => (
           <li key={m.memoryId}>
-            <Link to={`/memory/${m.memoryId}`} className="flex items-start gap-3 hover:bg-[#fff7ea] p-2 rounded-md transition">
-              <div className="w-10 text-xs text-[#5e5346]/65">{formatShortDate(m.memoryCreateDate)}</div>
-              <div className="flex-1 text-sm text-[#463b2d] truncate">{m.memoryText?.slice(0, 80) ?? "—"}</div>
+            <Link to={`/memory/${m.memoryId}`} className="flex items-start gap-3 hover:bg-panel-alt dark:hover:bg-panel-dark-alt p-2 rounded-md transition">
+              <div className="w-10 text-xs text-content-secondary/65 dark:text-content-dark-secondary/65">{formatShortDate(m.memoryCreateDate)}</div>
+              <div className="flex-1 text-sm text-content-primary dark:text-content-dark-primary truncate">{m.memoryText?.slice(0, 80) ?? "—"}</div>
             </Link>
           </li>
         ))}

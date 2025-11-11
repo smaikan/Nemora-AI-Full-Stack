@@ -206,15 +206,15 @@ if (location.pathname === "/newpage" &&  user !== null && availableDays?.length 
 
   return (
     <div className='flex min-h-screen w-full justify-center'>
-      <div className='w-[45rem] relative flex max-h-full pt-14 px-5 my-2 border-[3px] border-[#f8c994] shadow-2xl rounded'>
+      <div className='w-[45rem] relative flex max-h-full pt-14 px-5 my-2 border-[3px] border-primary dark:border-primary-dark shadow-2xl rounded'>
 
-        <div className='absolute top-1 right-3 text-gray-700/70 flex flex-col items-end gap-[2px]'>
+        <div className='absolute top-1 right-3 text-gray-700/70 dark:text-content-dark-secondary/70 flex flex-col items-end gap-[2px]'>
           {location.pathname !== "/newpage" 
-          ? <div className=" text-gray-400 mb-1">{new Date(memo.memoryCreateDate).toLocaleDateString("tr-TR")}</div> 
+          ? <div className=" text-gray-400 dark:text-content-dark-muted mb-1">{new Date(memo.memoryCreateDate).toLocaleDateString("tr-TR")}</div> 
           : <select
             value={selectedDate}
             onChange={(e) =>{setReadonlyState(false); setText(""); setSelectedDate(e.target.value)}}
-            className="border border-[#f8c994] rounded px-2 py-[2px] text-gray-700 bg-[#fff9f3] cursor-pointer hover:bg-[#fef3e7]"
+            className="border border-primary dark:border-primary-dark rounded px-2 py-[2px] text-gray-700 dark:text-content-dark-primary bg-panel dark:bg-panel-dark cursor-pointer hover:bg-panel-hover dark:hover:bg-panel-dark-alt"
           >
             {availableDays?.map((d) => (
               <option key={d} value={d}>
@@ -231,10 +231,10 @@ if (location.pathname === "/newpage" &&  user !== null && availableDays?.length 
           ref={textareaRef}
           onChange={(e) => setText(e.target.value)}
           value={text}
-          className="w-full font-hand font-extralight caret-[#fab584] text-xl min-h-full text-stone-700/90 bg-transparent outline-none resize-none p-4 overflow-y-auto"
+          className="w-full font-hand font-extralight caret-caret text-xl min-h-full text-content-primary dark:text-content-dark-primary bg-transparent outline-none resize-none p-4 overflow-y-auto"
           style={{
             backgroundImage:
-              "repeating-linear-gradient(transparent, transparent 36px, #f9c994 37px)",
+              "repeating-linear-gradient(transparent, transparent 36px, rgb(248, 201, 148) 37px)",
             backgroundPositionY: "8px",
             lineHeight: "37px",
             letterSpacing: "0.5px",
@@ -256,8 +256,8 @@ if (location.pathname === "/newpage" &&  user !== null && availableDays?.length 
               className={`group absolute left-3 top-2 
                                 h-10 px-6 min-w-20 rounded-lg font-semibold select-none 
                                 shadow-md hover:shadow-none
-                                flex justify-center items-center gap-2 text-[#4f412f]
-                                ${readonlyState ? "bg-[#846f53]" : "bg-[#c3a277]"}`}
+                                flex justify-center items-center gap-2 text-content-tertiary dark:text-content-dark-primary
+                                ${readonlyState ? "bg-button-disabled dark:bg-button-dark-active" : "bg-button-active dark:bg-button-dark-primary"}`}
             >
               {readonlyState ? "Günlük Sayfasını Düzenle" : "Değişiklikleri Kaydet"}
             </button>
@@ -268,8 +268,8 @@ if (location.pathname === "/newpage" &&  user !== null && availableDays?.length 
   onClick={() => handleSave()}
   className={`h-9 w-18 absolute ${loading && "w-32 transition-none duration-initial "} left-3 top-2 border-2 flex justify-center items-center text-sm select-none font-semibold rounded-md transition-all duration-200
     ${readonlyState
-      ? "cursor-not-allowed w-20 border-gray-400 bg-gray-300 text-gray-500 opacity-70 shadow-none"
-      : "cursor-pointer border-[#fec9a4] bg-[#f6e3d5] text-[#463b2d] hover:shadow-md active:scale-[0.97]"
+      ? "cursor-not-allowed w-20 border-gray-400 dark:border-edge-dark-light bg-gray-300 dark:bg-panel-dark-alt text-gray-500 dark:text-content-dark-muted opacity-70 shadow-none"
+      : "cursor-pointer border-edge-accent dark:border-primary bg-panel-alt2 dark:bg-panel-dark-alt text-content-primary dark:text-content-dark-primary hover:shadow-md active:scale-[0.97]"
     }`}
 >
   {loading? "Kaydediliyor...": readonlyState ? "Kaydedildi" : "Kaydet"}

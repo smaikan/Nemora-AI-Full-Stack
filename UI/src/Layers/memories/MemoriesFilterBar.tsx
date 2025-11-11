@@ -51,22 +51,22 @@ const MemoriesFilterBar: React.FC<Props> = ({ filteredMemories, onFilterChange }
 
   return (
     <div className="flex gap-4 self-end ml-auto mr-10 relative">
-      <div className="bg-[#fae0c3] hover:bg-[#f8c994] select-none cursor-pointer transition-all duration-100 w-24 flex justify-center items-center rounded-lg h-10">
+      <div className="bg-interactive dark:bg-interactive-dark hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover select-none cursor-pointer transition-all duration-100 w-24 flex justify-center items-center rounded-lg h-10">
         Tümü
       </div>
-      <div className="bg-[#fae0c3] hover:bg-[#f8c994] select-none cursor-pointer transition-all duration-100 w-24 flex justify-center items-center rounded-lg h-10">
+      <div className="bg-interactive dark:bg-interactive-dark hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover select-none cursor-pointer transition-all duration-100 w-24 flex justify-center items-center rounded-lg h-10">
         Favoriler
       </div>
-      <div className="bg-[#fae0c3] hover:bg-[#f8c994] select-none cursor-pointer transition-all duration-100 w-32 flex justify-center items-center rounded-lg h-10">
+      <div className="bg-interactive dark:bg-interactive-dark hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover select-none cursor-pointer transition-all duration-100 w-32 flex justify-center items-center rounded-lg h-10">
         Negatif Günler
       </div>
-      <div className="bg-[#fae0c3] hover:bg-[#f8c994] select-none cursor-pointer transition-all duration-100 w-32 flex justify-center items-center rounded-lg h-10">
+      <div className="bg-interactive dark:bg-interactive-dark hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover select-none cursor-pointer transition-all duration-100 w-32 flex justify-center items-center rounded-lg h-10">
         Pozitif Günler
       </div>
 
       {/* Tarih Seç dropdown */}
       <div
-        className="bg-[#fae0c3] hover:bg-[#f8c994] relative select-none cursor-pointer transition-all duration-100 w-40 flex justify-between items-center px-4 rounded-lg h-10"
+        className="bg-interactive dark:bg-interactive-dark hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover relative select-none cursor-pointer transition-all duration-100 w-40 flex justify-between items-center px-4 rounded-lg h-10"
         onClick={() => setIsOpen((p) => !p)}
         role="button"
         aria-haspopup="listbox"
@@ -77,11 +77,11 @@ const MemoriesFilterBar: React.FC<Props> = ({ filteredMemories, onFilterChange }
             ? monthOptions.find((m) => m.key === selectedMonth)?.label ?? "Tarih Seç"
             : "Tarih Seç"}
         </span>
-        <ChevronDown size={18} className="text-[#5e5346]" />
+        <ChevronDown size={18} className="text-content-secondary dark:text-content-dark-secondary" />
 
         {isOpen && (
           <div
-            className="absolute top-11 left-0 w-full bg-[#fff9f3] border border-[#ead7bf] rounded-lg shadow-md z-10 max-h-56 overflow-y-auto"
+            className="absolute top-11 left-0 w-full bg-panel dark:bg-panel-dark border border-edge-light dark:border-edge-dark-light rounded-lg shadow-md z-10 max-h-56 overflow-y-auto"
             role="listbox"
           >
             {monthOptions.map((opt) => (
@@ -91,7 +91,7 @@ const MemoriesFilterBar: React.FC<Props> = ({ filteredMemories, onFilterChange }
                   e.stopPropagation();
                   handleSelect(opt.key);
                 }}
-                className="px-4 py-2 hover:bg-[#f8e5cc] transition-colors text-[#463b2d]"
+                className="px-4 py-2 hover:bg-panel-hover dark:hover:bg-interactive-dark-selected transition-colors text-content-primary dark:text-content-dark-primary"
                 role="option"
                 aria-selected={selectedMonth === opt.key}
               >
@@ -99,7 +99,7 @@ const MemoriesFilterBar: React.FC<Props> = ({ filteredMemories, onFilterChange }
               </div>
             ))}
             {monthOptions.length === 0 && (
-              <div className="px-4 py-2 text-[#5e5346]/70 italic">Ay bulunamadı</div>
+              <div className="px-4 py-2 text-content-secondary/70 dark:text-content-dark-secondary/70 italic">Ay bulunamadı</div>
             )}
           </div>
         )}
