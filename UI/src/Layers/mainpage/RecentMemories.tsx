@@ -13,7 +13,7 @@ const formatShortDate = (iso?: string) =>
 
 const RecentMemories: React.FC<{ recent: Memory[] }> = ({ recent }) => {
   return (
-    <div className="bg-white dark:bg-panel-dark rounded-xl p-4 shadow-sm border border-edge-tertiary dark:border-edge-dark-secondary">
+    <div className="bg-panel dark:bg-panel-dark-alt rounded-xl p-4 shadow-sm border border-edge-tertiary dark:border-edge-dark-primary">
       <h3 className="text-sm font-semibold text-content-primary dark:text-content-dark-primary mb-3">Son Anılar</h3>
       <ul className="space-y-3">
         {recent.length === 0 && <li className="text-sm text-content-secondary/70 dark:text-content-dark-secondary/70">Henüz anı yok.</li>}

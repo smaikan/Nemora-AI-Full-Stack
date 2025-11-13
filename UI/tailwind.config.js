@@ -8,92 +8,78 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Primary brand colors
-        primary: {
-          DEFAULT: "#f8c994",
-          hover: "#e2b680",
-          light: "#f5e1b8",
-          dark: "#c3a277",
-          darker: "#846f53",
-          darkest: "#5e5346",
-        },
-        // Background colors
-        base: {
-          DEFAULT: "#f6ede4",
-          dark: "#2a241f",
-        },
-        panel: {
-          DEFAULT: "#fff9f3",
-          alt: "#fff7ea",
-          alt2: "#f6e3d0",
-          alt3: "#fffaf5",
-          hover: "#fef3e7",
-          dark: "#3a3329",
-          "dark-alt": "#4a4236",
-        },
-        // Text colors
+        // Ana palet
+        primary: "var(--color-primary)",
+        "primary-hover": "var(--color-primary-hover)",
+        "primary-light": "var(--color-primary-light)",
+        "primary-dark": "var(--color-primary-dark)",
+        "primary-darker": "var(--color-primary-darker)",
+        "primary-darkest": "var(--color-primary-darkest)",
+
+        // Arka plan ve yüzey
+        base: "var(--color-base)",
+        "base-dark": "var(--color-base-dark)",
+        panel: "var(--color-panel)",
+        "panel-alt": "var(--color-panel-alt)",
+        "panel-alt2": "var(--color-panel-alt2)",
+        "panel-hover": "var(--color-panel-hover)",
+        "panel-dark": "var(--color-panel-dark)",
+        "panel-dark-alt": "var(--color-panel-dark-alt)",
+
+        // Metinler
         content: {
-          primary: "#463b2d",
-          secondary: "#5e5346",
-          tertiary: "#4f412f",
-          muted: "#66513e",
-          dark: {
-            primary: "#f5e1b8",
-            secondary: "#d9b58d",
-            muted: "#c3a277",
-          },
+          primary: "var(--color-content-primary)",
+          secondary: "var(--color-content-secondary)",
+          muted: "var(--color-content-muted)",
+          "dark-primary": "var(--color-content-dark-primary)",
+          "dark-secondary": "var(--color-content-dark-secondary)",
+          "dark-muted": "var(--color-content-dark-muted)",
         },
-        // Border colors
+
+        // Kenarlıklar
         edge: {
-          primary: "#5e5346",
-          secondary: "#e0c9a6",
-          tertiary: "#efe0c8",
-          light: "#ead7bf",
-          lighter: "#e2cfba",
-          accent: "#fec9a4",
-          ring: "#d9b58d",
-          dark: {
-            primary: "#5e5346",
-            secondary: "#4a4236",
-            light: "#3a3329",
-          },
+          primary: "var(--color-edge-primary)",
+          secondary: "var(--color-edge-secondary)",
+          accent: "var(--color-edge-accent)",
+          "dark-primary": "var(--color-edge-dark-primary)",
+          "dark-secondary": "var(--color-edge-dark-secondary)",
         },
-        // Button colors
+
+        // Butonlar
         button: {
-          primary: "#f8c994",
-          hover: "#e2b680",
-          active: "#c3a277",
-          disabled: "#846f53",
-          light: "#ffd7aa",
-          dark: {
-            primary: "#c3a277",
-            hover: "#d9b58d",
-            active: "#846f53",
-          },
+          primary: "var(--color-button-primary)",
+          hover: "var(--color-button-hover)",
+          active: "var(--color-button-active)",
+          disabled: "var(--color-button-disabled)",
+          light: "var(--color-button-light)",
+          "dark-primary": "var(--color-button-dark-primary)",
+          "dark-hover": "var(--color-button-dark-hover)",
+          "dark-active": "var(--color-button-dark-active)",
         },
-        // Interactive elements
+
+        // Etkileşimli öğeler
         interactive: {
-          DEFAULT: "#fae0c3",
-          hover: "#f8c994",
-          selected: "#f3e0c9",
-          ring: "#d9b58d",
-          dark: {
-            DEFAULT: "#4a4236",
-            hover: "#5e5346",
-            selected: "#3a3329",
-          },
+          DEFAULT: "var(--color-interactive)",
+          hover: "var(--color-interactive-hover)",
+          selected: "var(--color-interactive-selected)",
+          ring: "var(--color-interactive-ring)",
+          dark: "var(--color-interactive-dark)",
+          "dark-hover": "var(--color-interactive-dark-hover)",
+          "dark-selected": "var(--color-interactive-dark-selected)",
         },
-        // Special purpose colors
-        caret: "#fab584",
-        "mood-indicator": "#f6c37e",
-        "focus-ring": "#e2b680",
-        "gradient-start": "#f8c994",
-        "gradient-end": "#f5e1b8",
-        "gradient-landing-start": "#F9FAFB",
-        "gradient-landing-end": "#fdeec7",
-        "chart-start": "#ffd89b",
-        "chart-end": "#f6e3d5",
-        "icon-inactive": "#8a7a60",
+
+        // Özel renkler
+        caret: "var(--color-caret)",
+        "mood-indicator": "var(--color-mood-indicator)",
+        "focus-ring": "var(--color-focus-ring)",
+        "gradient-start": "var(--color-gradient-start)",
+        "gradient-end": "var(--color-gradient-end)",
+        "gradient-landing-start": "var(--color-gradient-landing-start)",
+        "gradient-landing-end": "var(--color-gradient-landing-end)",
+        "chart-start": "var(--color-chart-start)",
+        "chart-end": "var(--color-chart-end)",
+        "icon-inactive": "var(--color-icon-inactive)",
+        ring: "var(--color-ring)",
       },
     },
   },

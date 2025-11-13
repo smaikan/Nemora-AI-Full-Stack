@@ -1,4 +1,3 @@
-import { PenLine } from 'lucide-react';
 import Header from './Header'
 import SidebarMenu from './SidebarMenu'
 import { useNavigate, useLocation } from 'react-router-dom'
@@ -16,7 +15,6 @@ const Sidebar = ({ loggedIn }: SidebarProps) => {
     <aside className="sticky top-0 left-0 h-screen min-w-64 bg-gradient-to-b from-gradient-start to-gradient-end dark:from-primary-dark dark:to-primary-light border-r-2 border-edge-primary dark:border-edge-dark-primary p-4 flex flex-col">
       <div className="mb-4 flex items-center gap-3">
         <div
-          
           onClick={() => navigate('/newpage')}
           onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { navigate('/newpage'); } }}
           aria-label="Yeni sayfa"
@@ -27,7 +25,7 @@ const Sidebar = ({ loggedIn }: SidebarProps) => {
               : 'bg-white/90 dark:bg-panel-dark/90 shadow hover:scale-105 hover:shadow-lg'
           }`}
         >
-          <PenLine className="text-blue-600 dark:text-blue-400 w-6 h-6 " />
+          <img src="/favicon.svg" alt="Nemora" className="w-6 h-6" />
         </div>
 
         <div>
@@ -52,6 +50,8 @@ const Sidebar = ({ loggedIn }: SidebarProps) => {
           </li>
           <li>
             <SidebarMenu route="/memories">Anılarım</SidebarMenu>
+          </li>
+          <li>
           </li>
         </ul>
       </nav>

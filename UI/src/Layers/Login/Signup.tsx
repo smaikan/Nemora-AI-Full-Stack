@@ -86,15 +86,15 @@ setError("Kullanıcı oluşturulamadı.")
   }
 
   return (
-    <div className='flex flex-col min-h-screen w-full justify-center items-center '>
+    <div className='flex flex-col max-h-screen md:mt-0 mt-15 md:min-h-screen w-full justify-center items-center '>
       {error && (
         <div className="w-[45rem] text-sm font-medium text-content-secondary dark:text-content-dark-secondary bg-red-300 dark:bg-red-800 px-3 py-2 text-center ">
           {error}
         </div>
       )}
 
-      <div className="bg-white dark:bg-panel-dark p-8 rounded-lg flex items-center shadow-md  w-[45rem]">
-        <div className="w-max pr-16 pl-10 flex flex-col border-r-2 border-edge-lighter dark:border-edge-dark-light">
+      <div className="bg-white dark:bg-panel-dark p-8 rounded-lg flex flex-col md:flex-row items-center shadow-md  w-[45rem]">
+        <div className="w-max pr-16 pl-10 flex flex-col border-b-2 md:border-b-0 md:border-r-2 border-edge-lighter dark:border-edge-dark-light">
           <div className='text-3xl font-bold mb-12 text-center text-content-secondary dark:text-content-dark-secondary'>Üye Ol</div>
           <form onKeyDown={(e) => {
             if (e.key === "Enter") {
@@ -102,17 +102,17 @@ setError("Kullanıcı oluşturulamadı.")
               SignupHandler();
             }
           }} className='flex justify-center items-center w-60 flex-col gap-4'>
-            <input onChange={(e) => setNewuser(prev => ({ ...prev, name: e.target.value }))} type="text" placeholder='Ad' className='border border-gray-300 dark:border-edge-dark-light rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-focus-ring dark:focus:ring-primary' />
-            <input onChange={(e) => setNewuser(prev => ({ ...prev, surname: e.target.value }))} type="text" placeholder='Soyad' className='border border-gray-300 dark:border-edge-dark-light rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-focus-ring dark:focus:ring-primary' />
-            <input onChange={(e) => setNewuser(prev => ({ ...prev, email: e.target.value }))} type="email" placeholder='E-mail' className='border border-gray-300 dark:border-edge-dark-light rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-focus-ring dark:focus:ring-primary' />
-            <input onChange={(e) => setNewuser(prev => ({ ...prev, password: e.target.value }))} type="password" placeholder='Şifre' className='border border-gray-300 dark:border-edge-dark-light rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-focus-ring dark:focus:ring-primary' />
-            <input onChange={(e) => setNewuser(prev => ({ ...prev, repassword: e.target.value }))} type="password" placeholder='Şifre Tekrarı' className='border border-gray-300 dark:border-edge-dark-light rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-focus-ring dark:focus:ring-primary' />
-            <div onClick={() => SignupHandler()} className='bg-button-light dark:bg-button-dark-primary text-center text-content-secondary dark:text-content-dark-secondary cursor-pointer w-28 font-bold py-2 rounded-md hover:bg-button-hover dark:hover:bg-button-dark-hover transition duration-200'>Üye Ol</div>
+            <input onChange={(e) => setNewuser(prev => ({ ...prev, name: e.target.value }))} type="text" placeholder='Ad' className='border border-gray-300 placeholder-gray-400 dark:border-edge-dark-light rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-focus-ring dark:focus:ring-primary' />
+            <input onChange={(e) => setNewuser(prev => ({ ...prev, surname: e.target.value }))} type="text" placeholder='Soyad' className='border placeholder-gray-400 border-gray-300 dark:border-edge-dark-light rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-focus-ring dark:focus:ring-primary' />
+            <input onChange={(e) => setNewuser(prev => ({ ...prev, email: e.target.value }))} type="email" placeholder='E-mail' className='border placeholder-gray-400 border-gray-300 dark:border-edge-dark-light rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-focus-ring dark:focus:ring-primary' />
+            <input onChange={(e) => setNewuser(prev => ({ ...prev, password: e.target.value }))} type="password" placeholder='Şifre' className='border placeholder-gray-400 border-gray-300 dark:border-edge-dark-light rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-focus-ring dark:focus:ring-primary' />
+            <input onChange={(e) => setNewuser(prev => ({ ...prev, repassword: e.target.value }))} type="password" placeholder='Şifre Tekrarı' className='border placeholder-gray-400 border-gray-300 dark:border-edge-dark-light rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-focus-ring dark:focus:ring-primary' />
+            <div onClick={() => SignupHandler()} className='bg-button-light mb-6 md:mb-0 dark:bg-button-dark-primary text-center text-content-secondary dark:text-content-dark-secondary cursor-pointer w-28 font-bold py-2 rounded-md hover:bg-button-hover dark:hover:bg-button-dark-hover transition duration-200'>Üye Ol</div>
           </form>
         </div>
 
-        <div className='pl-10 flex flex-col items-center w-max'>
-          <div className='text-3xl font-bold mb-12 text-center text-content-secondary dark:text-content-dark-secondary'>Zaten bir hesabın var mı?</div>
+        <div className='md:pl-10 flex flex-col items-center w-max'>
+          <div className='text-3xl mt-6 md:md-0 font-bold mb-7 md:mb-12 text-center text-content-secondary dark:text-content-dark-secondary'>Zaten bir hesabın var mı?</div>
 
           <div onClick={() => setCreate(false)} className='bg-button-light dark:bg-button-dark-primary text-center text-content-secondary dark:text-content-dark-secondary cursor-pointer w-28 font-bold py-2 rounded-md hover:bg-button-hover dark:hover:bg-button-dark-hover transition duration-200'>Giriş Yap</div>
         </div>

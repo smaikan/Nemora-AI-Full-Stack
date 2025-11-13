@@ -27,8 +27,9 @@ const SidebarMenu: React.FC<SidebarItemProps> = ({ onClick, route, children }) =
           ? (<FilePlus className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />) 
           : route == "/" ? (<House className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />) 
           : route == "/memories" ? (<NotebookTabs className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />)
+          : route == "/settings" ? (<Settings className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />)
           : route == "/authentication" ? (<LogOut className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />) 
-          : (<Settings className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />)
+          : (<LogOut className={`w-4 h-4 ${isActive ? "text-content-secondary dark:text-content-dark-secondary" : "text-icon-inactive dark:text-content-dark-muted"}`} />)
          }   
             <span className="truncate">{children}</span>
             

@@ -1,83 +1,202 @@
 @import "tailwindcss";
 
 @theme {
+  /* Yazı tipleri */
   --font-manrope: "Manrope", sans-serif;
   --font-hand: "Patrick Hand", cursive;
-  
-  /* Primary colors */
+
   --color-primary: #f8c994;
-  --color-primary-hover: #e2b680;
-  --color-primary-light: #f5e1b8;
+  --color-primary-hover: #e6b87a;
+  --color-primary-light: #f6e0b6;
   --color-primary-dark: #c3a277;
-  --color-primary-darker: #846f53;
+  --color-primary-darker: #9a855f;
   --color-primary-darkest: #5e5346;
-  
-  /* Background colors */
+
   --color-base: #f6ede4;
-  --color-base-dark: #2a241f;
-  
-  /* Panel/Surface colors */
+  --color-base-dark: #121317;
+
   --color-panel: #fff9f3;
-  --color-panel-alt: #fff7ea;
-  --color-panel-alt2: #f6e3d0;
-  --color-panel-alt3: #fffaf5;
-  --color-panel-hover: #fef3e7;
-  --color-panel-dark: #3a3329;
-  --color-panel-dark-alt: #4a4236;
-  
-  /* Text colors */
+  --color-panel-alt: #fff3e0;
+  --color-panel-alt2: #f5e3cc;
+  --color-panel-hover: #fef1db;
+  --color-panel-dark: #17191F;
+  --color-panel-dark-alt: #1D2027;
+
   --color-content-primary: #463b2d;
   --color-content-secondary: #5e5346;
-  --color-content-tertiary: #4f412f;
-  --color-content-muted: #66513e;
-  --color-content-dark-primary: #f5e1b8;
-  --color-content-dark-secondary: #d9b58d;
-  --color-content-dark-muted: #c3a277;
-  
-  /* Border colors */
-  --color-edge-primary: #5e5346;
-  --color-edge-secondary: #e0c9a6;
-  --color-edge-tertiary: #efe0c8;
-  --color-edge-light: #ead7bf;
-  --color-edge-lighter: #e2cfba;
-  --color-edge-accent: #fec9a4;
-  --color-edge-ring: #d9b58d;
-  --color-edge-dark-primary: #5e5346;
-  --color-edge-dark-secondary: #4a4236;
-  --color-edge-dark-light: #3a3329;
-  
-  /* Button colors */
+  --color-content-muted: #7a6d5f;
+  --color-content-dark-primary: #E6E8EE;
+  --color-content-dark-secondary: #B1B6C2;
+  --color-content-dark-muted: #8C93A3;
+
+  --color-edge-primary: #cbbda9;
+  --color-edge-secondary: #e6d8c0;
+  --color-edge-accent: #f8c994;
+  --color-edge-dark-primary: #2A2F39;
+  --color-edge-dark-secondary: #20242B;
+
   --color-button-primary: #f8c994;
   --color-button-hover: #e2b680;
   --color-button-active: #c3a277;
-  --color-button-disabled: #846f53;
-  --color-button-light: #ffd7aa;
-  --color-button-dark-primary: #c3a277;
-  --color-button-dark-hover: #d9b58d;
-  --color-button-dark-active: #846f53;
-  
-  /* Interactive colors */
+  --color-button-disabled: #b3a088;
+  --color-button-light: #ffe3b5;
+  --color-button-dark-primary: #2B3038;
+  --color-button-dark-hover: #353B45;
+  --color-button-dark-active: #1F232B;
+
   --color-interactive: #fae0c3;
   --color-interactive-hover: #f8c994;
   --color-interactive-selected: #f3e0c9;
   --color-interactive-ring: #d9b58d;
-  --color-interactive-dark: #4a4236;
-  --color-interactive-dark-hover: #5e5346;
-  --color-interactive-dark-selected: #3a3329;
-  
-  /* Special colors */
+  --color-interactive-dark: #22262E;
+  --color-interactive-dark-hover: #2B3038;
+  --color-interactive-dark-selected: #1A1E25;
+
   --color-caret: #fab584;
   --color-mood-indicator: #f6c37e;
   --color-focus-ring: #e2b680;
   --color-gradient-start: #f8c994;
   --color-gradient-end: #f5e1b8;
-  --color-gradient-landing-start: #F9FAFB;
+  --color-gradient-landing-start: #faf8f6;
   --color-gradient-landing-end: #fdeec7;
   --color-chart-start: #ffd89b;
   --color-chart-end: #f6e3d5;
   --color-icon-inactive: #8a7a60;
+  --color-ring: var(--color-yellow-300);
+
+}
+
+.dark {
+  --color-chart-start: #9aa3b2; 
+  --color-chart-end: #495162;   
+}
+
+:root.theme-blue {
+  /* Yazı Tipleri */
+  --font-manrope: "Manrope", sans-serif;
+  --font-hand: "Patrick Hand", cursive;
+
+  /* Ana Renk Paleti */
+  --color-primary: #7bb2ff;               /* Mavi – ana vurgu */
+  --color-primary-hover: #6aa0f0;         /* Hover efekti */
+  --color-primary-light: #bcd9ff;         /* Açık yüzey vurgusu */
+  --color-primary-dark: #4e86d9;          /* Yoğun mavi tonu */
+  --color-primary-darker: #3b6fb5;        /* Koyu mavi */
+  --color-primary-darkest: #284b80;       /* En koyu mavi */
+
+  /* Arka Planlar */
+  --color-base: #edf3fb;                  /* Açık mavi-gri ana zemin */
+  --color-base-dark: #101720;             /* Koyu mod için nötr lacivertimsi ton */
+
+  /* Paneller */
+  --color-panel: #f8fbff;                 /* Ana kart zemin */
+  --color-panel-alt: #e8f1fc;             /* Hafif kontrast panel */
+  --color-panel-alt2: #d7e7fa;            /* Daha belirgin panel */
+  --color-panel-hover: #e1ecfa;           /* Hover efekti */
+  --color-panel-dark: #192332;            /* Koyu mod kart */
+  --color-panel-dark-alt: #1f2b3d;        /* Koyu ikincil panel */
+
+  /* Metinler */
+  --color-content-primary: #1f2a3a;       /* Ana metin rengi */
+  --color-content-secondary: #3a4b61;     /* İkincil metin */
+  --color-content-muted: #61728a;         /* Pasif metin */
+  --color-content-dark-primary: #e4edfa;  /* Koyu temada açık metin */
+  --color-content-dark-secondary: #b8c9e3;/* Koyu temada ikincil metin */
+  --color-content-dark-muted: #8fa0bb;    /* Koyu temada pasif metin */
+
+  /* Kenarlıklar */
+  --color-edge-primary: #c7d8ef;          /* Panel kenarları */
+  --color-edge-secondary: #dbe6f7;        /* Ayrım çizgileri */
+  --color-edge-accent: #7bb2ff;           /* Vurgu kenar */
+  --color-edge-dark-primary: #34465f;     /* Koyu kenar */
+  --color-edge-dark-secondary: #2b3b52;   /* İkincil koyu kenar */
+
+  /* Butonlar */
+  --color-button-primary: #7bb2ff;        /* Ana mavi buton */
+  --color-button-hover: #68a1f5;          /* Hover’da daha canlı */
+  --color-button-active: #5186d3;         /* Aktif durumda koyulaşan */
+  --color-button-disabled: #a8c4e8;       /* Devre dışı */
+  --color-button-light: #cfe2ff;          /* Açık ton varyantı */
+  --color-button-dark-primary: #4b7bc5;   /* Koyu tema butonu */
+  --color-button-dark-hover: #5b8fe0;     
+  --color-button-dark-active: #3d6fa9;    
+
+  /* Etkileşimli Öğeler */
+  --color-interactive: #e4efff;
+  --color-interactive-hover: #d1e3ff;
+  --color-interactive-selected: #bfd7ff;
+  --color-interactive-ring: #84baff;
+  --color-interactive-dark: #243349;
+  --color-interactive-dark-hover: #2d415f;
+  --color-interactive-dark-selected: #1c263a;
+
+  /* Özel Amaçlı Renkler */
+  --color-caret: #a4ceff;
+  --color-mood-indicator: #5ea1ff;
+  --color-focus-ring: #6faeff;
+  --color-gradient-start: #c0dafc;
+  --color-gradient-end: #7bb2ff;
+  --color-gradient-landing-start: #f0f5ff;
+  --color-gradient-landing-end: #d8e7ff;
+  --color-chart-start: #9cc7ff;
+  --color-chart-end: #cfe2ff;
+  --color-icon-inactive: #7e8ca3;
+  --color-ring: var(--color-blue-300);
+
+  /* Uygulama Geneli */
+  background-color: var(--color-base);
+  color: var(--color-content-primary);
+}
+
+
+:root.dark {
+  /* Arka Planlar */
+  --color-base: #1d1c1a;                 /* Ana zemin: sıcak koyu gri (kahve alt tonlu) */
+  --color-panel: #252422;                /* Kart zemini */
+  --color-panel-alt: #2e2c29;            /* İkincil panel yüzeyi */
+  --color-panel-hover: #35322f;          /* Hover’da hafif açılan ton */
+
+  /* Metinler */
+  --color-content-primary: #f0e3c4;      /* Ana metin: açık bej */
+  --color-content-secondary: #d7c8a6;    /* İkincil metin */
+  --color-content-muted: #9f9177;        /* Pasif metin (yumuşak sıcak gri) */
+
+  /* Kenarlıklar / Çerçeveler */
+  --color-edge-primary: #3a3732;         /* Kart kenarları */
+  --color-edge-secondary: #4b473f;       /* Hafif açık ayrım çizgileri */
+  --color-edge-accent: #e3b86f;          /* Altın-bej vurgu */
+
+  /* Butonlar */
+  --color-button-primary: #e0b45c;       /* Amber sarı – sıcak ama fazla parlak değil */
+  --color-button-hover: #f1c46b;         /* Hover’da daha açık amber */
+  --color-button-active: #c89f53;        /* Basılı hissi için koyu amber */
+  --color-button-disabled: #5f5547;      /* Devre dışı butonlar */
+  --color-button-light: #e5c680;         /* Açık ton varyantı */
+
+  /* Etkileşimli Öğeler */
+  --color-interactive: #2a2724;          /* Hover yüzey */
+  --color-interactive-hover: #3a3631;
+  --color-interactive-selected: #48433e;
+  --color-interactive-ring: #d3af66;     /* Focus ring (yumuşak amber) */
+  
+  /* Grafik ve Özel Öğeler */
+  --color-caret: #f5cb7a;
+  --color-mood-indicator: #e1b967;
+  --color-focus-ring: #e5c275;
+  --color-gradient-start: #3a332c;
+  --color-gradient-end: #1d1c1a;
+  --color-chart-start: #f0c47a;
+  --color-chart-end: #d9a953;
+  --color-icon-inactive: #8b7a62;
+
+  /* Uygulama Geneli */
+  background-color: var(--color-base);
+  color: var(--color-content-primary);
 }
 
 body {
   font-family: var(--font-manrope);
+  background-color: var(--color-base);
+  color: var(--color-content-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

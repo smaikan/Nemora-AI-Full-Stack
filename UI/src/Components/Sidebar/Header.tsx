@@ -6,9 +6,10 @@ import { useCurrentUser } from '../Redux/Hooks';
 
 type HeaderProps = {
   loggedIn: React.Dispatch<React.SetStateAction<boolean>>;
+  onNavigate?: () => void;
 };
 
-const Header = ({ loggedIn }: HeaderProps) => {
+const Header = ({ loggedIn, onNavigate }: HeaderProps) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const user = useCurrentUser();
@@ -28,7 +29,11 @@ const Header = ({ loggedIn }: HeaderProps) => {
     dispatch(logout()); 
     loggedIn(false);
     navigate('/');
-    console.log("Logged out");  
+    localStorage.setItem("theme", "theme-yellow");
+const themes = ["dark", "theme-blue", "theme-yellow"];
+themes.forEach(t => document.documentElement.classList.remove(t));   
+document.documentElement.classList.add("theme-yellow");
+    onNavigate?.();
   };
   return (
     <>
@@ -45,7 +50,7 @@ const Header = ({ loggedIn }: HeaderProps) => {
       </div>
         </div>
         <div className='mb-8  pb-2 border-b-[1px] border-edge-primary dark:border-edge-dark-primary'> 
-        <SidebarMenu route="yok">Hesap Ayarları</SidebarMenu>
+        <SidebarMenu route="/settings" onClick={onNavigate}>Ayarlar</SidebarMenu>
         <SidebarMenu onClick={handleLogout} route="/welcome">Çıkış Yap</SidebarMenu>
         </div>
         

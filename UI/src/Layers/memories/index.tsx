@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import Memory from "./Memory";
+import { List, Heart, Frown, Smile, Calendar } from "lucide-react";
 
 export type MemoryType = {
   memoryId: number;
@@ -85,72 +86,117 @@ const Memories: React.FC<MemoriesProps> = ({ user }) => {
       : null;
 
   return (
-    <div className="px-6 pl-8 mt-8 min-h-screen w-full">
+    <div className="px-6 md:mb-16 mb-8 md:px-8 mt-8 min-h-screen w-full max-w-6xl mx-auto">
       <div className="flex">
-        <div className="mb-6">
-          <h1 className="text-2xl font-bold text-content-primary dark:text-content-dark-primary">Günlüklerim</h1>
-          <p className="text-sm text-content-secondary/80 dark:text-content-dark-secondary/80 mt-1">
-            Tüm günlük sayfalarınızı aşağıda bulabilirsiniz.
-          </p>
+        <div className="">
+          <h1 className="text-xl md:mb-16 mb-8 md:text-2xl font-bold text-content-primary dark:text-content-dark-primary">Günlüklerim</h1>
         </div>
 
-        <div className="flex gap-4 self-end ml-auto mr-10 relative">
+        {/* Mobile için */}
+        <div className="md:hidden ml-auto self-start relative">
+          <div
+            className="inline-flex items-center gap-2 px-3 h-9 rounded-full text-xs md:text-sm bg-panel dark:bg-panel-dark border border-edge-tertiary"
+            onClick={() => setOpenMonthBox((v) => !v)}
+          >
+            <Calendar className="w-3.5 h-3.5" />
+            <span className="truncate">{selectedMonthLabel || "Tarih Seç"}</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" className="text-content-secondary dark:text-content-dark-secondary">
+              <path fill="currentColor" d="M7 10l5 5 5-5H7z"></path>
+            </svg>
+
+            {openMonthBox && (
+              <div
+                className="absolute top-11 right-0 w-44 bg-panel dark:bg-panel-dark border border-edge-light dark:border-edge-dark-light rounded-lg shadow-md z-10 max-h-56 overflow-y-auto"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {monthOptions.length > 0 ? (
+                  <>
+                    <div
+                      className="px-4 py-2 hover:bg-panel-hover dark:hover:bg-interactive-dark-selected transition-colors text-content-primary dark:text-content-dark-primary"
+                      onClick={() => {
+                        setSelectedMonth(null);
+                        setOpenMonthBox(false);
+                      }}
+                    >
+                      (Tüm Aylar)
+                    </div>
+
+                    {monthOptions.map((opt) => (
+                      <div
+                        key={opt.key}
+                        className={`px-4 py-2 hover:bg-panel-hover dark:hover:bg-interactive-dark-selected transition-colors text-content-primary dark:text-content-dark-primary ${
+                          selectedMonth === opt.key ? "bg-interactive-selected dark:bg-interactive-dark-selected" : ""
+                        }`}
+                        onClick={() => {
+                          setSelectedMonth(opt.key);
+                          setOpenMonthBox(false);
+                        }}
+                      >
+                        {opt.label}
+                      </div>
+                    ))}
+                  </>
+                ) : (
+                  <div className="px-4 py-2 text-content-secondary/70 dark:text-content-dark-secondary/70 italic">Ay bulunamadı</div>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Desktop için */}
+        <div className="hidden md:flex gap-4 self-end ml-auto mr-10 relative">
           <div
             onClick={() => {
               setFilter("all");
               setSelectedMonth(null);
             }}
-            className={`bg-interactive dark:bg-interactive-dark select-none hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover cursor-pointer transition-all duration-100 w-24 flex justify-center items-center rounded-lg h-10 ${
-              filter === "all" ? "ring-2 ring-interactive-ring dark:ring-primary" : ""
+            className={`bg-interactive text-content-primary select-none hover:bg-interactive-hover cursor-pointer transition-all duration-100 w-24 flex justify-center items-center rounded-lg h-10 ${
+              filter === "all" && "ring-2 ring-interactive-ring " 
             }`}
           >
             Tümü
           </div>
-
           <div
             onClick={() => {
               setFilter("favorite");
               setSelectedMonth(null);
             }}
-            className={`bg-interactive dark:bg-interactive-dark select-none hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover cursor-pointer transition-all duration-100 w-24 flex justify-center items-center rounded-lg h-10 ${
+            className={`bg-interactive text-content-primary dark:bg-interactive-dark select-none hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover cursor-pointer transition-all duration-100 w-24 flex justify-center items-center rounded-lg h-10 ${
               filter === "favorite" ? "ring-2 ring-interactive-ring dark:ring-primary" : ""
             }`}
           >
             Favoriler
           </div>
-
           <div
             onClick={() => {
               setFilter("negative");
               setSelectedMonth(null);
             }}
-            className={`bg-interactive dark:bg-interactive-dark select-none hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover cursor-pointer transition-all duration-100 w-32 flex justify-center items-center rounded-lg h-10 ${
+            className={`bg-interactive text-content-primary dark:bg-interactive-dark select-none hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover cursor-pointer transition-all duration-100 w-32 flex justify-center items-center rounded-lg h-10 ${
               filter === "negative" ? "ring-2 ring-interactive-ring dark:ring-primary" : ""
             }`}
           >
             Negatif Günler
           </div>
-
           <div
             onClick={() => {
               setFilter("positive");
               setSelectedMonth(null);
             }}
-            className={`bg-interactive dark:bg-interactive-dark select-none hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover cursor-pointer transition-all duration-100 w-32 flex justify-center items-center rounded-lg h-10 ${
+            className={`bg-interactive text-content-primary dark:bg-interactive-dark select-none hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover cursor-pointer transition-all duration-100 w-32 flex justify-center items-center rounded-lg h-10 ${
               filter === "positive" ? "ring-2 ring-interactive-ring dark:ring-primary" : ""
             }`}
           >
             Pozitif Günler
           </div>
-
           <div
-            className="bg-interactive dark:bg-interactive-dark hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover relative select-none cursor-pointer transition-all duration-100 w-40 flex justify-between items-center px-4 rounded-lg h-10"
+            className="bg-interactive text-content-primary dark:bg-interactive-dark hover:bg-interactive-hover dark:hover:bg-interactive-dark-hover relative select-none cursor-pointer transition-all duration-100 w-40 flex justify-between items-center px-4 rounded-lg h-10"
             onClick={() => setOpenMonthBox((v) => !v)}
           >
             <span className="truncate">
               {selectedMonthLabel || "Tarih Seç"}
             </span>
-
             <svg
               width="16"
               height="16"
@@ -203,6 +249,62 @@ const Memories: React.FC<MemoriesProps> = ({ user }) => {
         </div>
       </div>
 
+      {/* Mobile için */}
+      <div className="md:hidden mt-3 h-8 flex items-center gap-2 overflow-x-auto whitespace-nowrap -mx-10 px-6">
+        <div
+          onClick={() => {
+            setFilter("all");
+            setSelectedMonth(null);
+          }}
+          className={`inline-flex items-center gap-2 cursor-pointer transition-all duration-100 px-3 h-7 rounded-full text-xs ${
+            filter === "all"
+              ? "bg-panel-alt2 dark:bg-interactive-dark-selected ring-1 ring-interactive-ring ring-offset-1 ring-offset-white dark:ring-offset-panel-dark font-semibold shadow-sm"
+              : "hover:bg-panel-alt dark:hover:bg-panel-dark-alt"
+          }`}
+        >
+          Tümü
+        </div>
+        <div
+          onClick={() => {
+            setFilter("favorite");
+            setSelectedMonth(null);
+          }}
+          className={`inline-flex  items-center gap-2 cursor-pointer transition-all duration-100 px-3 h-7 rounded-full text-xs ${
+            filter === "favorite"
+              ? "bg-panel-alt2 dark:bg-interactive-dark-selected ring-1 ring-interactive-ring ring-offset-1 ring-offset-white dark:ring-offset-panel-dark font-semibold shadow-sm"
+              : "hover:bg-panel-alt dark:hover:bg-panel-dark-alt"
+          }`}
+        >
+          Favoriler
+        </div>
+        <div
+          onClick={() => {
+            setFilter("negative");
+            setSelectedMonth(null);
+          }}
+          className={`inline-flex items-center gap-2 cursor-pointer transition-all duration-100 px-3 h-7 rounded-full text-xs ${
+            filter === "negative"
+              ? "bg-panel-alt2 dark:bg-interactive-dark-selected ring-1 ring-interactive-ring ring-offset-1 ring-offset-white dark:ring-offset-panel-dark font-semibold shadow-sm"
+              : "hover:bg-panel-alt dark:hover:bg-panel-dark-alt"
+          }`}
+        >
+          Negatif Günler
+        </div>
+        <div
+          onClick={() => {
+            setFilter("positive");
+            setSelectedMonth(null);
+          }}
+          className={`inline-flex items-center gap-2 cursor-pointer transition-all duration-100 px-3 h-7 rounded-full text-xs ${
+            filter === "positive"
+              ? "bg-panel-alt2 dark:bg-interactive-dark-selected ring-1 ring-interactive-ring ring-offset-1 ring-offset-white dark:ring-offset-panel-dark font-semibold shadow-sm"
+              : "hover:bg-panel-alt dark:hover:bg-panel-dark-alt"
+          }`}
+        >
+          Pozitif Günler
+        </div>
+      </div>
+
 <div className="flex flex-col w-full mx-auto mt-10 gap-8">
   {Object.entries(
     filteredMemories.reduce((acc, m) => {
@@ -230,7 +332,7 @@ const Memories: React.FC<MemoriesProps> = ({ user }) => {
         </span>
       </h2>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="grid grid-cols-2 gap-4 md:gap-8 md:flex md:flex-wrap">
         {items.map((m) => (
           <Memory
             key={m.memoryId}

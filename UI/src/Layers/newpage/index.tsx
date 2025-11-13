@@ -206,7 +206,7 @@ if (location.pathname === "/newpage" &&  user !== null && availableDays?.length 
 
   return (
     <div className='flex min-h-screen w-full justify-center'>
-      <div className='w-[45rem] relative flex max-h-full pt-14 px-5 my-2 border-[3px] border-primary dark:border-primary-dark shadow-2xl rounded'>
+      <div className='w-[45rem] bg-[#f6ede4] relative flex max-h-full pt-14 px-5 my-2 border-[3px] border-[#f8c994] dark:border-primary-dark shadow-2xl rounded'>
 
         <div className='absolute top-1 right-3 text-gray-700/70 dark:text-content-dark-secondary/70 flex flex-col items-end gap-[2px]'>
           {location.pathname !== "/newpage" 
@@ -269,7 +269,7 @@ if (location.pathname === "/newpage" &&  user !== null && availableDays?.length 
   className={`h-9 w-18 absolute ${loading && "w-32 transition-none duration-initial "} left-3 top-2 border-2 flex justify-center items-center text-sm select-none font-semibold rounded-md transition-all duration-200
     ${readonlyState
       ? "cursor-not-allowed w-20 border-gray-400 dark:border-edge-dark-light bg-gray-300 dark:bg-panel-dark-alt text-gray-500 dark:text-content-dark-muted opacity-70 shadow-none"
-      : "cursor-pointer border-edge-accent dark:border-primary bg-panel-alt2 dark:bg-panel-dark-alt text-content-primary dark:text-content-dark-primary hover:shadow-md active:scale-[0.97]"
+      : "cursor-pointer border-[#f8c994] dark:border-primary bg-[#f5e3cc] dark:bg-panel-dark-alt text-content-primary dark:text-content-dark-primary hover:shadow-md active:scale-[0.97]"
     }`}
 >
   {loading? "Kaydediliyor...": readonlyState ? "Kaydedildi" : "Kaydet"}

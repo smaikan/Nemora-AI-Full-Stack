@@ -8,7 +8,7 @@ type Summary = {
 
 const DailyTip: React.FC<{ summary: Summary; onWrite: () => void }> = ({ summary, onWrite }) => {
   return (
-    <div className="bg-white dark:bg-panel-dark rounded-xl p-5 shadow-sm border border-edge-tertiary dark:border-edge-dark-secondary">
+    <div className="bg-panel dark:bg-panel-dark-alt rounded-xl p-5 shadow-sm border border-edge-tertiary dark:border-edge-dark-primary">
       <div className="flex items-center justify-between mb-3">
         <h2 className="text-lg font-semibold text-content-primary dark:text-content-dark-primary">Günün Kısa Tavsiyesi</h2>
         <div className="text-xs text-content-secondary/70 dark:text-content-dark-secondary/70">AI önerisi (yakında)</div>
@@ -25,7 +25,7 @@ const DailyTip: React.FC<{ summary: Summary; onWrite: () => void }> = ({ summary
           <button onClick={onWrite} className="px-3 py-1 rounded-md bg-panel-alt2 dark:bg-interactive-dark text-sm text-content-secondary dark:text-content-dark-secondary hover:shadow-sm transition">
             Yeni Anı Yaz
           </button>
-          <Link to="/memories" className="px-3 py-1 rounded-md bg-white dark:bg-panel-dark border border-edge-tertiary dark:border-edge-dark-secondary text-sm text-content-secondary dark:text-content-dark-secondary">
+          <Link to="/memories" className="px-3 py-1 rounded-md bg-white dark:bg-panel-dark-alt border border-edge-tertiary dark:border-edge-dark-primary text-sm text-content-secondary dark:text-content-dark-secondary">
             Anılarımı Gör
           </Link>
         </div>
