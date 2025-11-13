@@ -17,12 +17,12 @@ namespace App.API.Controllers
             _userService = userService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllUsers()
-        {
-            var users = await _userService.GetAllUsersAsync();
-            return Ok(users);
-        }
+        // [HttpGet]
+        // public async Task<IActionResult> GetAllUsers()
+        // {
+        //     var users = await _userService.GetAllUsersAsync();
+        //     return Ok(users);
+        // }
 
         [Authorize]
         [HttpGet("loggeduser")]
@@ -72,15 +72,11 @@ namespace App.API.Controllers
         public async Task<IActionResult> UpdateUser([FromBody] UserCreateDTO user)
         {
             var claim = User.FindFirst("userId")?.Value;
+            int userid = int.Parse(claim);
             if (string.IsNullOrEmpty(claim) || !int.TryParse(claim, out var id))
                 return Unauthorized();
-            var getUser = await _userService.GetUserByEmailAsync(user.UserEmail);
-
-            if (getUser == null || !BCrypt.Net.BCrypt.Verify(user.UserPassword, getUser.UserPasswordHash))
-                return Unauthorized("Email veya şifre yanlış.");
-
-
-            await _userService.UpdateUserAsync(id, user);
+            
+            await _userService.UpdateUserAsync(userid, user);
             return NoContent();
         }
 

@@ -1,7 +1,7 @@
 # .NET
 api/bin/
 api/obj/
-
+appsettings.json
 # Node / React
 client/node_modules/
 client/dist/
@@ -12,3 +12,5 @@ client/dist/
 
 # IDE
 .vscode/
+.vs/
+

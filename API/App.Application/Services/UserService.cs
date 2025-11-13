@@ -1,4 +1,4 @@
-﻿using App.Application.Contracts.Persistence;
+using App.Application.Contracts.Persistence;
 using App.Application.Dto_s.User;
 using App.Domain.Entities;
 using Microsoft.Extensions.Configuration;
@@ -88,13 +88,17 @@ namespace App.Application.Services
 
         public async Task UpdateUserAsync(int id, UserCreateDTO userDTO)
         {
-            string hashed = BCrypt.Net.BCrypt.HashPassword(userDTO.UserPassword);
             var UpdatingUser = await _userRepository.GetByIdAsync(id);
-
+            if (UpdatingUser == null)
+                throw new Exception("Kullanıcı bulunamadı.");
             UpdatingUser.UserName = userDTO.UserName;
             UpdatingUser.UserSurname = userDTO.UserSurname;
             UpdatingUser.UserEmail = userDTO.UserEmail;
-            UpdatingUser.UserPasswordHash = hashed;
+            if (!string.IsNullOrWhiteSpace(userDTO.UserPassword))
+            {
+                var hashed = BCrypt.Net.BCrypt.HashPassword(userDTO.UserPassword);
+                UpdatingUser.UserPasswordHash = hashed;
+            }
 
             await _userRepository.UpdateAsync(UpdatingUser);
         }
@@ -102,10 +106,9 @@ namespace App.Application.Services
         public async Task DeleteUserAsync(int id)
         {
             var user = await _userRepository.GetByIdAsync(id);
-            if (user != null)
-            {
-                await _userRepository.DeleteAsync(user);
-            }
+            if (user == null)
+                throw new Exception("Kullanıcı bulunamadı.");
+            await _userRepository.DeleteAsync(user);
         }
     }
 }

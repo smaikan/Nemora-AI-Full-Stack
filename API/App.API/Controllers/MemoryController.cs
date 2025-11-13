@@ -20,20 +20,20 @@ namespace App.API.Controllers
         }
 
 
-        [HttpGet]
-public async Task<IActionResult> GetAllMemories()
-{
-    try
-    {
-        var memories = await _memoryService.GetAllMemoriesAsync();
-        return Ok(memories);
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine("ERROR IN CONTROLLER: " + ex);
-        return StatusCode(500, ex.ToString());
-    }
-}
+//         [HttpGet]
+// public async Task<IActionResult> GetAllMemories()
+// {
+//     try
+//     {
+//         var memories = await _memoryService.GetAllMemoriesAsync();
+//         return Ok(memories);
+//     }
+//     catch (Exception ex)
+//     {
+//         Console.WriteLine("ERROR IN CONTROLLER: " + ex);
+//         return StatusCode(500, ex.ToString());
+//     }
+// }
 
 
 
